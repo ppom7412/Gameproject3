@@ -1,9 +1,11 @@
 ﻿Shader "Custom/Circle" {
 	Properties{
-		_BackGruondColor("BackGruondColor", Color) = (1,1,1,1)
-		_CircleColor("CircleColor", Color) = (1,1,1,1)
+		_BackGruondColor("BackGruond Color", Color) = (1,1,1,1)
+		_CircleColor("Circle Color", Color) = (1,1,1,1)
+		_MaxRadius("Max Radius", Range(5, 10)) = 10
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
+		_CreatePoint("Cicle CreatePoint", Vector) = (0,0,0,1)
 	}
 	SubShader{
 		Tags{ "RenderType" = "Transparent" }
@@ -18,8 +20,10 @@
 	};
 		half _Glossiness;
 		half _Metallic;
+		half _MaxRadius;
 		fixed4 _BackGruondColor;
 		fixed4 _CircleColor;
+		fixed4 _CreatePoint;
 
 	// 원이 한개
 	void surf(Input IN, inout SurfaceOutputStandard o) {
@@ -29,9 +33,9 @@
 		o.Smoothness = _Glossiness;
 		
 
-		float dist = distance(fixed3(-5, 0, -5), IN.worldPos);
+		float dist = distance(_CreatePoint, IN.worldPos);
 		float radius = 2 + _Time * 50;
-		float maxRadius = 10;
+		float maxRadius = _MaxRadius;
 
 		// 원 생성
 		if (radius < maxRadius && radius < dist && dist < radius + 0.1) {

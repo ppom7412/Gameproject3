@@ -25,8 +25,10 @@ Material:
     m_Floats:
     - _Emission: 0
     - _Glossiness: 0
-    - _Metallic: 0.5
+    - _MaxRadius: 10
+    - _Metallic: 0.72
     m_Colors:
     - _BackGruondColor: {r: 0, g: 0, b: 0, a: 1}
-    - _CircleColor: {r: 1, g: 0.8896551, b: 0, a: 0}
+    - _CircleColor: {r: 0, g: 1, b: 0.33793116, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _CreatePoint: {r: -5, g: 5, b: 0, a: 0}
