@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class State {
+public class State<T> {
     public string name;
     public State() {
         name = "State";
     }
-    virtual public void Enter(Murderer murderer) { }
-    virtual public void Execute(Murderer murderer) { }
-    virtual public void Exit(Murderer murderer) { }
+    virtual public void Enter(T machine) { }
+    virtual public void Execute(T machine) { }
+    virtual public void Exit(T machine) { }
 }

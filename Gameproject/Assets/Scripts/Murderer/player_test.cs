@@ -5,11 +5,10 @@ using UnityEngine;
 public class player_test : MonoBehaviour {
     Murderer murderer;
 
-
     void Start () {
         GameObject ob = GameObject.FindGameObjectWithTag("Murderer");
         if (ob == null)
-            Debug.Log("Player don't get murderer object.");
+            ErrorAdmin.WarningMessegeFromObject("Don't Found Object With Tag is Murderer","Start()", gameObject);
         else
             murderer = ob.GetComponent<Murderer>();
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Murderer : MonoBehaviour {
-    public StateMachine murdererMachine;
+    public StateMachine<Murderer> murdererMachine;
 
     private GameObject player;
     private Vector3 soundSpot;
@@ -15,10 +15,17 @@ public class Murderer : MonoBehaviour {
     private float attackDelay;
 
     public void Start() {
-        murdererMachine = new StateMachine(gameObject);
+        murdererMachine = new StateMachine<Murderer>(gameObject);
         player = GameObject.FindGameObjectWithTag("Player");
+        gameObject.tag = "Murderer";
 
-        if (player == null) Debug.Log("Error: Murderer don't get Player object");
+        if (player == null)
+            ErrorAdmin.ErrorMessegeFromObject("Don't Found Object With Tag is Player", "Start()", gameObject);
+
+        // StateMachine initialization
+        murdererMachine.SetGlobalState(new GlobalState());
+        murdererMachine.SetPreviousState(new State<Murderer>());
+        murdererMachine.SetCurrentState(new Wait());
     }
 
     void Update() {
@@ -84,6 +91,7 @@ public class Murderer : MonoBehaviour {
     public void Attacking(){
         Debug.Log(" < 공격한다 > ");
     }
+
     public void Walking(){
         gameObject.transform.position = gameObject.transform.position + (Vector3.up * 0.1f);
     }

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wait : State {
+public class Wait : State<Murderer>
+{
     private float time = 0.0f;
     private float ramdomTime;
 

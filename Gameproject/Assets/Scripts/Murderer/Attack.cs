@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Attack : State
+public class Attack : State<Murderer>
 {
     private float time = 0.0f;
 

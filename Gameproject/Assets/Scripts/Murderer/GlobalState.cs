@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //상태변이조건 걸어주는 클래스
-public class GlobalState : State {
+
+public class GlobalState : State<Murderer>
+{
     override public void Enter(Murderer murderer) { }
     override public void Exit(Murderer murderer) { }
 
