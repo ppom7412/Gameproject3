@@ -4,7 +4,7 @@
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
 		_CircleColor("Circle Color", Color) = (1,1,1,1)
-		_MaxRadius("Max Radius", Range(5, 10)) = 10
+		_MaxRadius("Max Radius", Range(0, 10)) = 1
 		_CreatePoint("Circle CreatePoint", Vector) = (0,0,0,1)
 	}
 	SubShader{
@@ -34,7 +34,7 @@
 		
 
 		float dist = distance(_CreatePoint, IN.worldPos);
-		float radius = 2 + _Time * 50;
+		float radius = 1 + _Time * 30;
 		float maxRadius = _MaxRadius;
 
 		// 원 생성
