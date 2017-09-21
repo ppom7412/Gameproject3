@@ -1,11 +1,11 @@
 ﻿Shader "Custom/Circle" {
 	Properties{
 		_BackGruondColor("BackGruond Color", Color) = (1,1,1,1)
-		_CircleColor("Circle Color", Color) = (1,1,1,1)
-		_MaxRadius("Max Radius", Range(5, 10)) = 10
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
-		_CreatePoint("Cicle CreatePoint", Vector) = (0,0,0,1)
+		_CircleColor("Circle Color", Color) = (1,1,1,1)
+		_MaxRadius("Max Radius", Range(5, 10)) = 10
+		_CreatePoint("Circle CreatePoint", Vector) = (0,0,0,1)
 	}
 	SubShader{
 		Tags{ "RenderType" = "Transparent" }
