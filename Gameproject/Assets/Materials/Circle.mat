@@ -31,4 +31,4 @@ Material:
     - _BackGruondColor: {r: 0, g: 0, b: 0, a: 1}
     - _CircleColor: {r: 0.94482756, g: 1, b: 0, a: 1}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _CreatePoint: {r: 0, g: 0, b: 0, a: 0}
+    - _CreatePoint: {r: 0, g: 0, b: 0, a: 1}
