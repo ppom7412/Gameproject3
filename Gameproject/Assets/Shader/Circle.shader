@@ -21,10 +21,9 @@
 		half _Glossiness;
 		half _Metallic;
 		half _MaxRadius;
-		float3 _CreatePoint;
 		fixed4 _BackGruondColor;
 		fixed4 _CircleColor;
-
+		fixed4 _CreatePoint;
 
 	// 원이 한개
 	void surf(Input IN, inout SurfaceOutputStandard o) {
@@ -32,8 +31,8 @@
 		
 		o.Metallic = _Metallic;
 		o.Smoothness = _Glossiness;
+		
 
-		_CreatePoint = float3(_CreatePoint.x,IN.worldPos.y,_CreatePoint.z);
 		float dist = distance(_CreatePoint, IN.worldPos);
 		float radius = 1 + _Time * 30;
 		float maxRadius = _MaxRadius;
