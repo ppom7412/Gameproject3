@@ -15,10 +15,10 @@ public class Wait : State<Murderer>
 
     override public void Enter(Murderer murderer){
         Debug.Log("In Wait");
+        murderer.animator.SetBool("isWait", true);
     }
 
     override public void Execute(Murderer murderer) {
-        murderer.Waiting();
         time += Time.deltaTime;
 
         if (time > ramdomTime)
@@ -27,5 +27,6 @@ public class Wait : State<Murderer>
 
     override public void Exit(Murderer murderer) {
         Debug.Log("Out Wait");
+        murderer.animator.SetBool("isWait", false);
     }
 }

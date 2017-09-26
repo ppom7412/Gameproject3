@@ -11,11 +11,12 @@ public class Chase : State<Murderer>
 
     override public void Enter(Murderer murderer) {
         Debug.Log("In Chase");
+        murderer.animator.SetBool("isChase", true);
+        murderer.ResetWaypoint();
+        murderer.agent.Resume();
     }
 
     override public void Execute(Murderer murderer){
-        murderer.Chase();
-
         //너무 가까우면 멈춘다.
         if (murderer.CheckMinDistanse())
         {
@@ -25,5 +26,8 @@ public class Chase : State<Murderer>
 
     override public void Exit(Murderer murderer) {
         Debug.Log("Out Chase");
+        murderer.animator.SetBool("isChase", false);
+
+        murderer.agent.Stop();
     }
 }

@@ -15,6 +15,9 @@ public class Walk : State<Murderer>
 
     override public void Enter(Murderer murderer) {
         Debug.Log("In Walk");
+        murderer.animator.SetBool("isWalk", true);
+        murderer.FoundWayPoint();
+        murderer.agent.Resume();
     }
 
     override public void Execute(Murderer murderer) {
@@ -27,5 +30,7 @@ public class Walk : State<Murderer>
 
     override public void Exit(Murderer murderer) {
         Debug.Log("Out Walk");
+        murderer.animator.SetBool("isWalk", false);
+        murderer.agent.Stop();
     }
 }
