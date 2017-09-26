@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Murderer : MonoBehaviour {
-    public StateMachine<Murderer> murdererMachine;
+    [Header(" + Murderer Animations")]
+    public AnimationClip attackAnim;
+    public AnimationClip idleAnim;
+    public AnimationClip walkAnim;
+    public AnimationClip chaseAnim;
 
-    private GameObject player;
-    private Vector3 soundSpot;
+    [Header(" + Murderer Stat")]
     [SerializeField]
     private float sensitiveArea;
     [SerializeField]
@@ -14,9 +17,15 @@ public class Murderer : MonoBehaviour {
     [SerializeField]
     private float attackDelay;
 
+    public StateMachine<Murderer> murdererMachine;
+    private Animator animator;
+    private GameObject player;
+    private Vector3 soundSpot;
+
     public void Start() {
         murdererMachine = new StateMachine<Murderer>(gameObject);
         player = GameObject.FindGameObjectWithTag("Player");
+        animator = GetComponent<Animator>();
         gameObject.tag = "Murderer";
 
         if (player == null)
@@ -93,7 +102,7 @@ public class Murderer : MonoBehaviour {
     }
 
     public void Walking(){
-        gameObject.transform.position = gameObject.transform.position + (Vector3.up * 0.1f);
+        //gameObject.transform.position = gameObject.transform.position + (Vector3.up * 0.1f);
     }
 
     public void Chase(){
