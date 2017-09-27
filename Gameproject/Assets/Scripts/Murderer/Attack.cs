@@ -14,8 +14,6 @@ public class Attack : State<Murderer>
     override public void Enter(Murderer murderer)  {
         Debug.Log("In Attack");
         murderer.animator.SetBool("isAttack", true);
-        murderer.animator.SetFloat("time", 0);
-        
     }
 
     override public void Execute(Murderer murderer) {
