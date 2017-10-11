@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FingerOfMidas : MonoBehaviour {
 
-    //움직이는 오브젝트에다 layer moveObject (8번) 적용 꼭 하자.
+    //움직이는 오브젝트에다 MovedObject 스크립트를 꼭 적용 합시다.
     
     public GameObject emthyCurserImage;
     public GameObject selecedCurserImage;
@@ -13,8 +13,10 @@ public class FingerOfMidas : MonoBehaviour {
     public float speed;
     [Range(1.0f,10.0f)]
     public float sensitive;
-    [Range(1, 10)]
-    public int power;
+    [Range(1.0f, 10.0f)]
+    public float pullingPower;
+    [Range(1.0f, 10.0f)]
+    public float pushingPower;
     public int maxDistance;
     public float  minDistance;
 
@@ -68,18 +70,27 @@ public class FingerOfMidas : MonoBehaviour {
             ishold = true;
 
         if (Input.GetMouseButtonUp(0))
+        {
+            PushTheObject();
             ishold = false;
+        }
 
         if (ishold && lookObject != null)
         {
             Transform tr = Camera.main.transform;
-            Rigidbody body = lookObject.GetComponent<Rigidbody>();
+            MovedObject getlookObject = lookObject.GetComponent<MovedObject>();
             float currDistance = Vector3.Distance(lookObject.transform.position, tr.position + (tr.forward * minDistance));
 
-            if (body != null)
+            if (getlookObject == null)
             {
-                body.angularVelocity = Vector3.zero;
-                body.velocity = Vector3.zero;
+                ErrorAdmin.WarningMessegeFromObject("lookObject.GetComponent<MovedObject>() == null", "UseFingerToObject()", gameObject);
+                return;
+            }
+
+            if (getlookObject.body != null)
+            {
+                getlookObject.body.angularVelocity = Vector3.zero;
+                getlookObject.body.velocity = Vector3.zero;
             }
 
             if (currDistance > maxDistance + minDistance)
@@ -89,13 +100,38 @@ public class FingerOfMidas : MonoBehaviour {
                 return;
             }
 
-            lookObject.transform.position = Vector3.Lerp(lookObject.transform.position, tr.position + (tr.forward * minDistance), Time.deltaTime * power);
+            lookObject.transform.position = Vector3.Lerp(lookObject.transform.position, tr.position + (tr.forward * minDistance), Time.deltaTime * (pullingPower / getlookObject.weight));
 
-            //일정 거리 내에 오면 바로앞으로 당겨오기
+            //일정 거리 내에 오면 바로 앞으로 당겨오기
             //if (Vector3.Distance(lookObject.transform.position, tr.position + (tr.forward * minDistance)) >= minDistance)
             //lookObject.transform.position = Vector3.Lerp(lookObject.transform.position, tr.position + (tr.forward * (minDistance + (power/5))), Time.deltaTime * power);
             //else
             //lookObject.transform.position = tr.position + (tr.forward * minDistance);
+
+            //힘으로 당겨오기
+            //Vector3 addPower = (tr.position + (tr.forward * minDistance)) - lookObject.transform.position;
+            //lookObject.GetComponent<Rigidbody>().AddForce(addPower); 
+        }
+    }
+
+    private void PushTheObject()
+    {
+        if (ishold && lookObject != null)
+        {
+            Rigidbody body = lookObject.GetComponent<Rigidbody>();
+            MovedObject moveOb = lookObject.GetComponent<MovedObject>();
+
+            if (body == null) {
+                ErrorAdmin.WarningMessegeFromObject("lookObject.GetComponent<Rigidbody>() == null", "PushTheObject()", lookObject);
+                return;
+            }
+
+            if (moveOb == null) {
+                ErrorAdmin.WarningMessegeFromObject("lookObject.GetComponent<MovedObject>() == null", "PushTheObject()", lookObject);
+                return;
+            }
+
+            body.AddForce(Camera.main.transform.forward * (pushingPower * 10 ) /moveOb.weight);
         }
     }
 

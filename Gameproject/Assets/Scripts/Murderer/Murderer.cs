@@ -155,9 +155,16 @@ public class Murderer : MonoBehaviour {
         currWaypoint = -1;
     }
 
-    public void Attacking(){
-        Debug.Log(" < 공격한다 > ");
-        gameObject.transform.LookAt(player.transform);
+    public IEnumerator StartAttack(){
+        while (true)
+        {
+            animator.SetBool("isAttack", true);
+            gameObject.transform.LookAt(player.transform);
+            yield return new WaitForSeconds(1.3333f);
+            animator.SetBool("isAttack", false);
+
+            yield return new WaitForSeconds(attackDelay);
+        }
     }
 
 }
