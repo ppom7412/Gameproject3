@@ -4,6 +4,7 @@
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
 		_CircleColor("Circle Color", Color) = (1,1,1,1)
+		_EnemyCircleColor("EnemyCircle Color", Color) = (1,1,1,1)
 		_MaxRadius("Max Radius", Range(0, 100)) = 1
 		//_CreatePoint("Circle CreatePoint", Vector) = (0,0,0,0)
 		_Cutoff     ("Cutoff"      , Range(0, 1)) = 0.2
@@ -47,34 +48,41 @@
 
 		half _MaxRadius;
 		half3 _CircleColor;
-		fixed3 _CreatePoint;
+		half3 _EnemyCircleColor;
+		fixed4 _CreatePoint;
 
-		// 원 생성포인트 좌표,활성화여부 배열및 그 길이
-		int _PointArrayLength = 10;
-		bool _ActiveArray[10];
-		fixed4 _PointArray[10];
+		float dist;
 
-
-		//float3 testPoint[1] = {0};
+		// 원 생성포인트 좌표,활성화여부,플레이어여부 배열및 그 길이
+		int pointArrayLength = 10;
+		uniform float activeArray[10];
+		uniform float enemyArray[10];
+		uniform fixed4 pointArray[10];
 
 		void surf(Input IN, inout SurfaceOutputStandard o) {
 
 			o.Alpha = 0.1;
-			float radius = 1 + (float)_Time * 60;
+			float radius = 1 + (float)_Time * 120;
 			float maxRadius = _MaxRadius;
 
-
-			float dist = distance(_CreatePoint, IN.worldPos);
-
-//			for(int i = 0; i < _PointArrayLength; i++)
-//			{
-//				_CreatePoint = _PointArray[i];
-//				// 원 생성
-//				if (_ActiveArray[i]&&radius < maxRadius && radius < dist && dist < radius + 0.03) {
-//					o.Albedo = _CircleColor;
-//					o.Alpha = 0.3;
-//				}
-//			}
+			for(int i = 0; i < 10; i++)
+			{
+				_CreatePoint = pointArray[i];
+				dist = distance(_CreatePoint, IN.worldPos);
+				if (activeArray[i] == 1.0f&&radius < maxRadius && radius < dist && dist < radius + 0.03) {
+					if(enemyArray[i] == 0.0f)
+					{
+						o.Albedo = _CircleColor;
+						o.Alpha = 0.3;
+					}
+					else if(enemyArray[i] == 1.0f)
+					{
+						o.Albedo = _EnemyCircleColor;
+						o.Alpha = 0.3;
+					}
+				}
+			
+			}
 		}
 		ENDCG
 	}

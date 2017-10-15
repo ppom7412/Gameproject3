@@ -26,7 +26,7 @@ Material:
     - _Cutoff: 0.2
     - _Emission: 0
     - _Glossiness: 0
-    - _MaxRadius: 16
+    - _MaxRadius: 10
     - _Metallic: 0.71
     - _OutlineWidth: 0.1
     m_Colors:
@@ -34,5 +34,6 @@ Material:
     - _CircleColor: {r: 0.7416776, g: 0.77205884, b: 0.2213992, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _CreatePoint: {r: 0, g: 0, b: 0, a: 0}
+    - _EnemyCircleColor: {r: 1, g: 0, b: 0, a: 1}
     - _MainColor: {r: 1, g: 1, b: 1, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}

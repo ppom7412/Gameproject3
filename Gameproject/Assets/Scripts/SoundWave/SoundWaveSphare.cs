@@ -17,7 +17,7 @@ public class SoundWaveSphare : MonoBehaviour {
 		if (col.radius <= MaxRadius) {
 			col.radius += Time.deltaTime * 1.50f;
 		} else {
-			Destroy (gameObject);
+			col.radius = 0.5f;
 		}
 	}
 }
