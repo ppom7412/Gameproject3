@@ -4,64 +4,88 @@
 		_Glossiness("Smoothness", Range(0,1)) = 0.5
 		_Metallic("Metallic", Range(0,1)) = 0.0
 		_CircleColor("Circle Color", Color) = (1,1,1,1)
-		_MaxRadius("Max Radius", Range(0, 10)) = 1
-		_CreatePoint("Circle CreatePoint", Vector) = (0,0,0,1)
+		_EnemyCircleColor("EnemyCircle Color", Color) = (1,1,1,1)
+		_MaxRadius("Max Radius", Range(0, 100)) = 1
+		//_CreatePoint("Circle CreatePoint", Vector) = (0,0,0,0)
+		_Cutoff     ("Cutoff"      , Range(0, 1)) = 0.2
 	}
 	SubShader{
-		Tags{ "RenderType" = "Transparent" }
-		LOD 200
+
+		// 배경묘사
+		Tags{ "RenderType"="Opaque" }
 
 		CGPROGRAM
-#pragma surface surf Standard fullforwardshadows
-#pragma target 3.0
+		#pragma surface surf Standard fullforwardshadows
+		#pragma target 3.0
+
+		half _Glossiness;
+		half _Metallic;
+		half3 _BackGruondColor;
 
 		struct Input {
 		float3 worldPos;
-	};
-		half _Glossiness;
-		half _Metallic;
-		half _MaxRadius;
-		fixed4 _BackGruondColor;
-		fixed4 _CircleColor;
-		fixed4 _CreatePoint;
-
-	// 원이 한개
-	void surf(Input IN, inout SurfaceOutputStandard o) {
-
-		
-		o.Metallic = _Metallic;
-		o.Smoothness = _Glossiness;
-		
-
-		float dist = distance(_CreatePoint, IN.worldPos);
-		float radius = 1 + _Time * 30;
-		float maxRadius = _MaxRadius;
-
-		// 원 생성
-		if (radius < maxRadius && radius < dist && dist < radius + 0.1) {
-			o.Albedo = _CircleColor;
-		}
-		else {
+		};
+		void surf(Input IN, inout SurfaceOutputStandard o) {
+			o.Metallic = _Metallic;
+			o.Smoothness = _Glossiness;
 			o.Albedo = _BackGruondColor;
 		}
+		ENDCG
 
-		
-	}
+		// 원의 묘사
+		Tags {
+		"Queue"      = "AlphaTest"
+		"RenderType" = "TransparentCutout"
+		}
 
-	//// 원이 여러개
-	//void surf(Input IN, inout SurfaceOutputStandard o) {
-	//	float dist = distance(fixed3(0,0,0), IN.worldPos);	// (0,0,0) 을 중심으로 IN의 월드자표와의 거리
-	//	float val = abs(sin(dist*1.0 - _Time * 50));		// sin 함수의 절대치 - _Time, Time의 크기가 퍼지는 속도, dist의 배율이 밀집도
-	//	
-	//	
-	//	if (val > 0.98) {
-	//		o.Albedo = fixed4(1, 1, 1, 1);
-	//	}
-	//	else {
-	//		o.Albedo = fixed4(0,0, 0, 1);
-	//	}
-	//}
-	ENDCG
+		CGPROGRAM
+		#pragma surface surf Standard fullforwardshadows alphatest:_Cutoff
+		#pragma target 3.0
+
+		struct Input {
+		float3 worldPos;
+		};
+
+		half _MaxRadius;
+		half3 _CircleColor;
+		half3 _EnemyCircleColor;
+		fixed4 _CreatePoint;
+
+		float dist;
+
+		// 원 생성포인트 좌표,활성화여부,플레이어여부 배열및 그 길이
+		int pointArrayLength = 10;
+		uniform float activeArray[10];
+		uniform float enemyArray[10];
+		uniform float radiusArray[10];
+		uniform fixed4 pointArray[10];
+
+		void surf(Input IN, inout SurfaceOutputStandard o) {
+
+			o.Alpha = 0.1;
+			/*float radius = 1 + (float)_Time * 120;*/
+			float maxRadius = _MaxRadius;
+
+			for(int i = 0; i < 10; i++)
+			{
+				_CreatePoint = pointArray[i];
+				dist = distance(_CreatePoint, IN.worldPos);
+				if (activeArray[i] == 1.0f&&radiusArray[i] < maxRadius && radiusArray[i] < dist && dist < radiusArray[i] + 0.03) {
+					if(enemyArray[i] == 0.0f)
+					{
+						o.Albedo = _CircleColor;
+						o.Alpha = 0.3;
+					}
+					else if(enemyArray[i] == 1.0f)
+					{
+						o.Albedo = _EnemyCircleColor;
+						o.Alpha = 0.3;
+					}
+				}
+			
+			}
+		}
+		ENDCG
 	}
-		FallBack "Diffuse"
+	FallBack "Diffuse"
 }
