@@ -7,6 +7,7 @@ public struct SoundWaveData
     public float isActive;
     public float isEnemy;
     public float radius;
+    public float subRadius;
     public Vector4 circlePoint;
 }
 
@@ -21,7 +22,8 @@ public class SoundWaveManager : MonoBehaviour {
     private float[] isActiveArray;
 	private float[] isEnemyArray;
     private float[] radiusArray;
-	private Vector4[] circlePointArray;
+    private float[] subRadiusArray;
+    private Vector4[] circlePointArray;
 
     private SoundWaveData tempData;
 
@@ -32,6 +34,7 @@ public class SoundWaveManager : MonoBehaviour {
 		material.SetFloatArray("activeArray", new float[10]);
 		material.SetFloatArray("enemyArray", new float[10]);
         material.SetFloatArray("radiusArray", new float[10]);
+        material.SetFloatArray("subRadiusArray", new float[10]);
         material.SetVectorArray ("pointArray", new Vector4[10]);
 	}
 
@@ -40,6 +43,7 @@ public class SoundWaveManager : MonoBehaviour {
         isActiveArray = new float[10];
         isEnemyArray = new float[10];
         radiusArray = new float[10];
+        subRadiusArray = new float[10];
         circlePointArray = new Vector4[10];
 
         soundWaveSpheres = new GameObject[10];
@@ -63,6 +67,7 @@ public class SoundWaveManager : MonoBehaviour {
         material.SetFloatArray("activeArray", isActiveArray);
 		material.SetFloatArray("enemyArray", isEnemyArray);
         material.SetFloatArray("radiusArray", radiusArray);
+        material.SetFloatArray("subRadiusArray", subRadiusArray);
         material.SetVectorArray("pointArray", circlePointArray);
 	}
 
@@ -92,6 +97,7 @@ public class SoundWaveManager : MonoBehaviour {
             isActiveArray[i] = tempData.isActive;
             isEnemyArray[i] = tempData.isEnemy;
             radiusArray[i] = tempData.radius;
+            subRadiusArray[i] = tempData.subRadius;
             circlePointArray[i] = tempData.circlePoint;
         }
     }

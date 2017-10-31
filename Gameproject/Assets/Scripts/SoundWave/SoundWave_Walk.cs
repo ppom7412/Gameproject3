@@ -16,6 +16,7 @@ public class SoundWave_Walk : MonoBehaviour {
         data.isActive = 1.0f;
         data.isEnemy = 0.0f;
         data.radius = 0.5f;
+        data.subRadius = 0.6f;
         data.circlePoint = transform.position;
     }
 

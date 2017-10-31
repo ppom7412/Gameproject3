@@ -3434,6 +3434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &163393544
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4848,6 +4850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &231024249
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7248,6 +7252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!1 &316177018
 GameObject:
   m_ObjectHideFlags: 0
@@ -11472,6 +11478,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &512979436
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14908,6 +14916,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &701923389
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15986,6 +15996,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &762448903
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22841,6 +22853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &1130450274
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32588,6 +32602,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &1611938524
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34742,6 +34758,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &1739794775
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38650,6 +38668,32 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2.8999999, z: 0.34139854}
   m_Center: {x: 0, y: 1.4499999, z: -0.0000001937151}
+--- !u!1 &1969644497 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 295288766}
+--- !u!114 &1969644499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1969644497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe9313f5f490c2949aa0f156fe059038, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  sensitivityDepth: 10
+  sensitivityNormals: 1
+  lumThreshold: 0.2
+  edgeExp: 1
+  sampleDist: 1
+  edgesOnly: 0
+  edgesOnlyBgColor: {r: 0, g: 0, b: 0, a: 1}
+  edgesColor: {r: 1, g: 1, b: 1, a: 1}
+  edgeDetectShader: {fileID: 4800000, guid: bdf71563add7df445ac9d10a47a87fe8, type: 3}
+  edgeDetectMaterial: {fileID: 0}
 --- !u!1 &1970231793 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100042, guid: 9f9fac72b36530641b0b2d4029aeaa3b, type: 3}
@@ -40831,6 +40875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxRadius: 10
+  thickness: 0.1
+  thicknessReduction: 0.1
 --- !u!135 &2127450921
 SphereCollider:
   m_ObjectHideFlags: 0

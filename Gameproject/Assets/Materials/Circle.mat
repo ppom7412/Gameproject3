@@ -31,7 +31,7 @@ Material:
     - _OutlineWidth: 0.1
     m_Colors:
     - _BackGruondColor: {r: 0, g: 0, b: 0, a: 1}
-    - _CircleColor: {r: 0.7416776, g: 0.77205884, b: 0.2213992, a: 0}
+    - _CircleColor: {r: 0.94482744, g: 1, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _CreatePoint: {r: 0, g: 0, b: 0, a: 0}
     - _EnemyCircleColor: {r: 1, g: 0, b: 0, a: 1}

@@ -6,7 +6,11 @@ public class SoundWaveSphere : MonoBehaviour {
 
 	private  SphereCollider col;
 	[SerializeField]
-	private float MaxRadius = 10;
+	private float MaxRadius = 10;               // 최대 반지름
+    [SerializeField]
+    private float thickness = 0.1f;             // 굵기
+    [SerializeField]
+    private float thicknessReduction = 0.1f;    // 굵기 초당 감소량
 
     // 이 오브젝트의 데이터를 저장하는 구조체
     private SoundWaveData soundWaveData;
@@ -19,6 +23,7 @@ public class SoundWaveSphere : MonoBehaviour {
         soundWaveData.isActive = 0.0f;
         soundWaveData.isEnemy = 0.0f;
         soundWaveData.radius = 0.5f;
+        soundWaveData.subRadius = 0.6f;
         soundWaveData.circlePoint = new Vector4(0, 30,-30);
 
         ClineTakeData();
@@ -34,7 +39,8 @@ public class SoundWaveSphere : MonoBehaviour {
             if (col.radius <= MaxRadius) {
                 col.radius += Time.deltaTime * 5.0f;
                 takeData.radius = col.radius;
-               
+                takeData.subRadius = takeData.radius + thickness - Time.deltaTime * thicknessReduction;
+
             } else {
                 ClineTakeData();
                 col.radius = takeData.radius;
@@ -54,6 +60,7 @@ public class SoundWaveSphere : MonoBehaviour {
         takeData.isActive = externalData.isActive;
         takeData.isEnemy = externalData.isEnemy;
         takeData.radius = externalData.radius;
+        takeData.subRadius = externalData.subRadius;
         takeData.circlePoint = externalData.circlePoint;
     }
 
@@ -63,6 +70,7 @@ public class SoundWaveSphere : MonoBehaviour {
         soundWaveData.isActive = SetData.isActive;
         soundWaveData.isEnemy = SetData.isEnemy;
         soundWaveData.radius = SetData.radius;
+        soundWaveData.subRadius = SetData.subRadius;
         soundWaveData.circlePoint = SetData.circlePoint;
     }
     // 외부 데이터 초기화
@@ -71,6 +79,7 @@ public class SoundWaveSphere : MonoBehaviour {
         takeData.isActive = 0.0f;
         takeData.isEnemy = 0.0f;
         takeData.radius = 0.5f;
+        takeData.radius = 0.6f;
         takeData.circlePoint = new Vector4(0, 30, -30);
     }
 }

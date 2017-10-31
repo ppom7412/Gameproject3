@@ -58,6 +58,7 @@
 		uniform float activeArray[10];
 		uniform float enemyArray[10];
 		uniform float radiusArray[10];
+		uniform float subRadiusArray[10];
 		uniform fixed4 pointArray[10];
 
 		void surf(Input IN, inout SurfaceOutputStandard o) {
@@ -70,7 +71,7 @@
 			{
 				_CreatePoint = pointArray[i];
 				dist = distance(_CreatePoint, IN.worldPos);
-				if (activeArray[i] == 1.0f&&radiusArray[i] < maxRadius && radiusArray[i] < dist && dist < radiusArray[i] + 0.03) {
+				if (activeArray[i] == 1.0f&&radiusArray[i] < maxRadius && radiusArray[i] < dist && dist < subRadiusArray[i] ) {
 					if(enemyArray[i] == 0.0f)
 					{
 						o.Albedo = _CircleColor;
