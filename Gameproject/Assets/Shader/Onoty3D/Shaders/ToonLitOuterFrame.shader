@@ -1,4 +1,4 @@
-// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 
 Shader "Onoty3D/Toon/Lit OuterFrame" {
 	Properties {
@@ -41,6 +41,7 @@ Shader "Onoty3D/Toon/Lit OuterFrame" {
 				#pragma fragment frag
 
 				float _OuterFrameWidth;
+				float _RenderOuterFrame;
 				float4 _OuterFrameColor;
 				struct appdata {
 					float4 vertex : POSITION;
@@ -54,13 +55,13 @@ Shader "Onoty3D/Toon/Lit OuterFrame" {
 				v2f vert(appdata v) {
 					v2f o;
 					o.pos = UnityObjectToClipPos(v.vertex);
-
 					float3 norm = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, v.normal));
 					float2 offset = TransformViewToProjection(norm.xy);
 
 					o.pos.xy += offset * o.pos.z * _OuterFrameWidth;
 					UNITY_TRANSFER_FOG(o, o.pos);
 					return o;
+
 				}
 
 				half4 frag(v2f i) : COLOR{

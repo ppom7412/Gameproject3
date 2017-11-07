@@ -11,6 +11,9 @@ public class SoundWave_Walk : MonoBehaviour {
     private GameObject SoundWaveManager;
     private GameObject SoundWave;
 
+    [SerializeField]
+    private GameObject WalkCheckArea;
+
     void Start () {
         isGround = false;
         data.isActive = 1.0f;
@@ -45,7 +48,7 @@ public class SoundWave_Walk : MonoBehaviour {
             {
                 isGround = true;
 
-                data.circlePoint = transform.position;
+                data.circlePoint = WalkCheckArea.transform.position;
                 SoundWave = SoundWaveManager.GetComponent<SoundWaveManager>().SearchInactiveObject();
                 SoundWave.GetComponent<SoundWaveSphere>().SetTakeData(data);
 
