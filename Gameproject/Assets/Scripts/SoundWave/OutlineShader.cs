@@ -12,6 +12,7 @@ public class OutlineShader : MonoBehaviour
 
     void Start()
     {
+        MyGameObject = gameObject;
         MyMaterial = MyGameObject.GetComponent<MeshRenderer>().material;
     }
 
