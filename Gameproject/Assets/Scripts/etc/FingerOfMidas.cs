@@ -9,18 +9,18 @@ public class FingerOfMidas : MonoBehaviour {
     public GameObject emthyCurserImage;
     public GameObject selecedCurserImage;
 
-    [Range(1.0f,10.0f)]
-    public float speed;
-    [Range(1.0f,10.0f)]
-    public float sensitive;
-    [Range(1.0f, 10.0f)]
+    //[Range(0f,10.0f)]
+    //public float speed;
+    //[Range(0f,10.0f)]
+    //public float sensitive;
+    [Range(0.1f, 10.0f)]
     public float pullingPower;
     [Range(1.0f, 10.0f)]
     public float pushingPower;
     public int maxDistance;
     public float  minDistance;
 
-    private GameObject lookObject;
+    public GameObject lookObject;
     private bool ishold;
 
     private void Start()
@@ -33,8 +33,8 @@ public class FingerOfMidas : MonoBehaviour {
 
     void Update () {
 
-        MoveInput();
-        RotateInput();
+        //MoveInput();
+        //RotateInput();
 
         CheckLookObject();
         UseFingerToObject();
@@ -135,19 +135,5 @@ public class FingerOfMidas : MonoBehaviour {
         }
     }
 
-    private void MoveInput()
-    {
-        float deltaX = Input.GetAxis("Horizontal"); 
-        float deltaY = Input.GetAxis("Vertical");
 
-        transform.Translate(deltaX * speed, 0, deltaY * speed);
-    }
-
-    private void RotateInput()
-    {
-        float deltaX = Input.GetAxis("Mouse X");
-        float deltaY = Input.GetAxis("Mouse Y");
-
-        transform.Rotate(-(deltaY * sensitive), deltaX * sensitive, 0);
-    }
 }

@@ -3,43 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LoadingScenes : MonoBehaviour {
+public class LoadingScenes : MonoBehaviour
+{
     public Text loadingText;
+    public Text timeText;
+    public float limitTime;
 
-    private float fTime;
-    private bool IsDone = false;
+    private float fTime = 0;
+    public bool isStart = false;
     private AsyncOperation async_operation;
 
-	void Start () {
-    }
-	
-	void Update () {
-        fTime += Time.deltaTime;
-        loadingText.text = fTime.ToString();
+    void Update()
+    {
+        if (!isStart)
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                LoadScene("SceneA");
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
+            {
+                LoadScene("SceneB");
+            }
+        }
+        else
+        {
+            fTime += Time.deltaTime;
+            timeText.text = "<" + fTime.ToString("F2") + ">";
+            loadingText.text = (async_operation.progress * 100.0f).ToString("F1");
 
-        if (fTime >= 10)
-            async_operation.allowSceneActivation = true;
-	}
+            if (fTime >= limitTime && async_operation.progress >= 0.9f)
+                async_operation.allowSceneActivation = true;
+        }
+    }
 
     public void LoadScene(string _nextName)
     {
+        isStart = true;
+        loadingText.text = _nextName + "을 로딩합니다...";
+
         StopAllCoroutines();
-        StartCoroutine(StartLoad(_nextName));
+        StartCoroutine(LoadYourAsyncScene(_nextName));
     }
 
-    public IEnumerator StartLoad(string _sceneName)
+    IEnumerator LoadYourAsyncScene(string _sceneName)
     {
         async_operation = Application.LoadLevelAsync(_sceneName);
-        async_operation.allowSceneActivation = false;
+        async_operation.allowSceneActivation = false; //제한시간을 걸기위함
 
-        if (IsDone == false) {
-            IsDone = true;
-
-            while (async_operation.progress < 0.9f) {
-                loadingText.text = async_operation.progress.ToString();
-
-                yield return true;
-            }
-        }
+        yield return async_operation;
     }
 }
