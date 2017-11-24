@@ -10,32 +10,43 @@ public class OutlineShader : MonoBehaviour
     private GameObject MyGameObject;
     private Material MyMaterial;
 
+    private bool isActive;
+
+    private float timer;
+    [SerializeField]
+    private float waitingTime = 2.0f;
+
     void Start()
     {
+        timer = 0.0f;
+        isActive = false;
+        MyGameObject = gameObject;
         MyMaterial = MyGameObject.GetComponent<MeshRenderer>().material;
+    }
+
+    private void Update()
+    {
+        if (isActive)
+        {
+            timer += Time.deltaTime;
+            if (timer > waitingTime)
+            {
+                timer = 0;
+                MyGameObject.GetComponent<MeshRenderer>().material = MyMaterial;
+                isActive = false;
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag == "SoundWave")
+        if (!isActive)
         {
-            MyGameObject.GetComponent<MeshRenderer>().material = Outline;
-        }
-    }
-
-    private void OnTriggerStay(Collider col)
-    {
-        if (col.tag == "SoundWave")
-        {
-            MyGameObject.GetComponent<MeshRenderer>().material = Outline;
-        }
-    }
-
-    private void OnTriggerExit(Collider col)
-    {
-        if (col.tag == "SoundWave")
-        {
-            MyGameObject.GetComponent<MeshRenderer>().material = MyMaterial;
+            if (col.tag == "SoundWave")
+            {
+                MyGameObject.GetComponent<MeshRenderer>().material = Outline;
+                isActive = true;
+            }
         }
     }
 }

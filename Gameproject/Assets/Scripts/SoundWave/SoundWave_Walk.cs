@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class SoundWave_Walk : MonoBehaviour {
 
+    private bool isActive;
     private bool isGround;
+    private float timer;
+    [SerializeField]
+    private float waitingTime = 0.3f;
     private SoundWaveData data;
     
     [SerializeField]
@@ -15,6 +19,8 @@ public class SoundWave_Walk : MonoBehaviour {
     private GameObject WalkCheckArea;
 
     void Start () {
+        timer = 0.0f;
+        isActive = false;
         isGround = false;
         data.isActive = 1.0f;
         data.isEnemy = 0.0f;
@@ -23,15 +29,32 @@ public class SoundWave_Walk : MonoBehaviour {
         data.circlePoint = transform.position;
     }
 
+    private void Update()
+    {
+        if (isActive)
+        {
+            timer += Time.deltaTime;
+            if (timer > waitingTime)
+            {
+                timer = 0;
+                isActive = false;
+            }
+        }
+    }
+
     private void OnTriggerEnter(Collider col)
     {
-        // WalkCheckArea에 들어갔을시 초기화
-        if (col.tag == "WalkCheckArea")
+        if (!isActive)
         {
-            Debug.Log("WalkCheckArea");
-            if (isGround)
+            isActive = true;
+            // WalkCheckArea에 들어갔을시 초기화
+            if (col.tag == "WalkCheckArea")
             {
-                isGround = false;
+                Debug.Log("WalkCheckArea");
+                if (isGround)
+                {
+                    isGround = false;
+                }
             }
         }
 
