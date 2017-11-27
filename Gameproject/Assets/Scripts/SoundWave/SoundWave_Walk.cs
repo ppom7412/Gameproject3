@@ -46,14 +46,14 @@ public class SoundWave_Walk : MonoBehaviour {
     {
         if (!isActive)
         {
-            isActive = true;
             // WalkCheckArea에 들어갔을시 초기화
             if (col.tag == "WalkCheckArea")
             {
-                Debug.Log("WalkCheckArea");
                 if (isGround)
                 {
                     isGround = false;
+                    isActive = true;
+                    Debug.Log("WalkCheckArea");
                 }
             }
         }
@@ -66,9 +66,10 @@ public class SoundWave_Walk : MonoBehaviour {
         // 바닥에 발이 닿았을시 처리
         if (col.tag == "Floor")
         {
-            Debug.Log("Floor");
+            
             if (!isGround)
             {
+                Debug.Log("Floor");
                 isGround = true;
 
                 data.circlePoint = WalkCheckArea.transform.position;
