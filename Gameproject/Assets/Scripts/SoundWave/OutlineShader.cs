@@ -18,11 +18,9 @@ public class OutlineShader : MonoBehaviour
 
     void Start()
     {
-<<<<<<< HEAD
         timer = 0.0f;
         isActive = false;
-=======
->>>>>>> 950001c25c80e083eeb4c6dbe2243a9321938013
+
         MyGameObject = gameObject;
         MyMaterial = MyGameObject.GetComponent<MeshRenderer>().material;
     }
