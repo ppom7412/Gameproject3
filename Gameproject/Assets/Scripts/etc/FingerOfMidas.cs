@@ -46,7 +46,7 @@ public class FingerOfMidas : MonoBehaviour {
         if (ishold)  return;
 
         Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
-        Debug.DrawRay(ray.origin, ray.direction, Color.red);
+        Debug.DrawRay(ray.origin, ray.direction, Color.green);
         RaycastHit hit;
         if (Physics.Raycast(ray.origin, ray.direction, out hit, maxDistance))
         {

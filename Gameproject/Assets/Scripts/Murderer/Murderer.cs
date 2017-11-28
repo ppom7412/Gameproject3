@@ -26,10 +26,12 @@ public class Murderer : MonoBehaviour
     private GameObject player;
     private Vector3 soundSpot;
     private int currWaypoint;
+    private int layermask;
 
     public void Start()
     {
         murdererMachine = new StateMachine<Murderer>(gameObject);
+        layermask = 1 << LayerMask.NameToLayer("Default");
         player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
@@ -79,8 +81,20 @@ public class Murderer : MonoBehaviour
     {
         float distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
 
-        if (distance < attackArea)
-            return true;
+        if (distance > attackArea)
+            return false;
+
+        Vector3 direction = player.transform.forward - transform.forward;
+        Ray ray = new Ray(transform.position, direction);
+        RaycastHit hit;
+
+        Debug.DrawRay(ray.origin, ray.direction, Color.red);
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, attackArea,layermask)){
+
+            if (player == hit.collider.gameObject)
+                return true;
+
+        }
 
         return false;
     }

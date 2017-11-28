@@ -314,12 +314,12 @@ MonoBehaviour:
   attackArea: 3
   attackDelay: 3.5
   wayPoints:
-  - {fileID: 335660079}
-  - {fileID: 1214900184}
-  - {fileID: 492804880}
-  - {fileID: 1221560595}
-  - {fileID: 1391795353}
-  - {fileID: 1436902968}
+  - points: []
+  - points: []
+  - points: []
+  - points: []
+  - points: []
+  - points: []
   animator: {fileID: 0}
   agent: {fileID: 0}
 --- !u!54 &234945627
@@ -538,11 +538,6 @@ Transform:
   m_Father: {fileID: 4605517}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &335660079 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1627379113527598, guid: cbe4d0eb0f303894093f146e8cf15f59,
-    type: 2}
-  m_PrefabInternal: {fileID: 876917197}
 --- !u!1001 &447773510
 Prefab:
   m_ObjectHideFlags: 0
@@ -589,11 +584,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cbe4d0eb0f303894093f146e8cf15f59, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &492804880 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1627379113527598, guid: cbe4d0eb0f303894093f146e8cf15f59,
-    type: 2}
-  m_PrefabInternal: {fileID: 1957804250}
 --- !u!1 &522644163
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 693329735}
   - component: {fileID: 693329734}
+  - component: {fileID: 693329736}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -939,6 +930,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &693329736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693329733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0357f82f442f5c748becf2a0eb39728c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionalLight: {fileID: 0}
+  minIntensity: 0.12
+  maxIntensity: 4.81
 --- !u!1001 &876917197
 Prefab:
   m_ObjectHideFlags: 0
@@ -1324,12 +1329,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   emthyCurserImage: {fileID: 1881746978}
   selecedCurserImage: {fileID: 649970768}
-  speed: 1
-  sensitive: 3.84
   pullingPower: 2
   pushingPower: 5.77
   maxDistance: 17
   minDistance: 1.22
+  lookObject: {fileID: 0}
 --- !u!54 &1075589789
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1542,16 +1546,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4369662931675846, guid: cbe4d0eb0f303894093f146e8cf15f59,
     type: 2}
   m_PrefabInternal: {fileID: 1569787475}
---- !u!1 &1214900184 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1627379113527598, guid: cbe4d0eb0f303894093f146e8cf15f59,
-    type: 2}
-  m_PrefabInternal: {fileID: 1564368063}
---- !u!1 &1221560595 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1627379113527598, guid: cbe4d0eb0f303894093f146e8cf15f59,
-    type: 2}
-  m_PrefabInternal: {fileID: 447773510}
 --- !u!1 &1286649262
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,16 +1656,6 @@ Transform:
   m_Father: {fileID: 57795970}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1391795353 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1627379113527598, guid: cbe4d0eb0f303894093f146e8cf15f59,
-    type: 2}
-  m_PrefabInternal: {fileID: 199977732}
---- !u!1 &1436902968 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1627379113527598, guid: cbe4d0eb0f303894093f146e8cf15f59,
-    type: 2}
-  m_PrefabInternal: {fileID: 606012770}
 --- !u!1 &1527149744
 GameObject:
   m_ObjectHideFlags: 0
