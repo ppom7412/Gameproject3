@@ -72,7 +72,7 @@ public class GettingKeyFromObject : MonoBehaviour {
                     ErrorAdmin.ErrorMessegeFromObject("Object is not Door, But Object have Layer is Door", "TryToOpenTheDoor()", hitInfo.collider.gameObject);
 
                 UseTheKeys(door);
-                OpenTheDoor(door);
+                ActiveDoor(door);
             }
         }
     }
@@ -86,7 +86,7 @@ public class GettingKeyFromObject : MonoBehaviour {
         }
     }
 
-    public void OpenTheDoor(DoorScript _door)
+    public void ActiveDoor(DoorScript _door)
     {
         if (thisType == GettingType.MasterKey)
         {
