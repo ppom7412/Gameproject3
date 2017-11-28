@@ -16,6 +16,8 @@ public class OutlineShader : MonoBehaviour
     [SerializeField]
     private float waitingTime = 2.0f;
 
+    private SoundWaveData soundWaveData;
+
     void Start()
     {
         timer = 0.0f;
@@ -45,8 +47,12 @@ public class OutlineShader : MonoBehaviour
         {
             if (col.tag == "SoundWave")
             {
-                MyGameObject.GetComponent<MeshRenderer>().material = Outline;
-                isActive = true;
+                soundWaveData = col.GetComponent<SoundWaveSphere>().GetSoundWaveData();
+                if (soundWaveData.isEnemy == 0.0f)
+                {
+                    MyGameObject.GetComponent<MeshRenderer>().material = Outline;
+                    isActive = true;
+                }
             }
         }
     }

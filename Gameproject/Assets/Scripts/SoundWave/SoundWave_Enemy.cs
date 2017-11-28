@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundWave_Walk : MonoBehaviour {
-
+public class SoundWave_Enemy : MonoBehaviour {
     private bool isActive;
     private bool isGround;
     private float timer;
     [SerializeField]
     private float waitingTime = 0.3f;
     private SoundWaveData data;
-    
+
     [SerializeField]
     private GameObject SoundWaveManager;
     private GameObject SoundWave;
@@ -18,12 +17,13 @@ public class SoundWave_Walk : MonoBehaviour {
     [SerializeField]
     private GameObject WalkCheckArea;
 
-    void Start () {
+    void Start()
+    {
         timer = 0.0f;
         isActive = false;
         isGround = false;
         data.isActive = 1.0f;
-        data.isEnemy = 0.0f;
+        data.isEnemy = 1.0f;
         data.radius = 0.5f;
         data.subRadius = 0.6f;
         data.circlePoint = transform.position;
