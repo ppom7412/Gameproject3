@@ -11,6 +11,8 @@ public class ChatWindow : MonoBehaviour {
     public Text showTextBoxObject;
     public float defaultTime;
 
+    public string[] texts;
+
     void Awake()
     {
         if (!instance)
@@ -75,4 +77,8 @@ public class ChatWindow : MonoBehaviour {
         instance.SetUpChatWindow(_limitTime, _chatContain);
     }
 
+    public static void StartTextInChatWondow(int _chatContain, float _limitTime = -1)
+    {
+        instance.SetUpChatWindow(_limitTime, instance.texts[_chatContain]);
+    }
 }
