@@ -3,7 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Murderer : MonoBehaviour {
+[System.Serializable]
+public class WayPoint
+{
+    public GameObject[] points;
+};
+
+public class Murderer : MonoBehaviour
+{
     [SerializeField]
     private float sensitiveArea;
     [SerializeField]
@@ -11,7 +18,7 @@ public class Murderer : MonoBehaviour {
     [SerializeField]
     private float attackDelay;
 
-    public GameObject[] wayPoints;
+    public WayPoint[] wayPoints;
     public StateMachine<Murderer> murdererMachine;
     public Animator animator;
     public NavMeshAgent agent;
@@ -19,9 +26,12 @@ public class Murderer : MonoBehaviour {
     private GameObject player;
     private Vector3 soundSpot;
     private int currWaypoint;
+    private int layermask;
 
-    public void Start() {
+    public void Start()
+    {
         murdererMachine = new StateMachine<Murderer>(gameObject);
+        layermask = 1 << LayerMask.NameToLayer("Default");
         player = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
@@ -34,15 +44,27 @@ public class Murderer : MonoBehaviour {
         // StateMachine initialization
         murdererMachine.SetGlobalState(new GlobalState());
         murdererMachine.SetPreviousState(new State<Murderer>());
-        murdererMachine.SetCurrentState(new Wait());
+        CurrStateSetWait();
     }
 
-    void Update() {
+    void Update()
+    {
         murdererMachine.Update();
     }
 
-    public void SetSoundSpot(Vector3 _spot) {
+    public void SetSoundSpot(Vector3 _spot)
+    {
         soundSpot = _spot;
+    }
+
+    public void CurrStateSetEmpty()
+    {
+        murdererMachine.ChangeState(new Empty());
+    }
+
+    public void CurrStateSetWait()
+    {
+        murdererMachine.SetCurrentState(new Wait());
     }
 
     public void ResetSoundSpot()
@@ -50,20 +72,35 @@ public class Murderer : MonoBehaviour {
         soundSpot = Vector3.zero;
     }
 
-    public float GetAttackDelay() {
+    public float GetAttackDelay()
+    {
         return attackDelay;
     }
 
-    public bool CheckAttackArea() {
+    public bool CheckAttackArea()
+    {
         float distance = Vector3.Distance(player.transform.position, gameObject.transform.position);
 
-        if (distance < attackArea)
-            return true;
+        if (distance > attackArea)
+            return false;
+
+        Vector3 direction = player.transform.forward - transform.forward;
+        Ray ray = new Ray(transform.position, direction);
+        RaycastHit hit;
+
+        Debug.DrawRay(ray.origin, ray.direction, Color.red);
+        if (Physics.Raycast(ray.origin, ray.direction, out hit, attackArea,layermask)){
+
+            if (player == hit.collider.gameObject)
+                return true;
+
+        }
 
         return false;
     }
 
-    public bool CheckSensitiveArea() {
+    public bool CheckSensitiveArea()
+    {
         if (soundSpot == Vector3.zero) return false;
 
         float distance = Vector3.Distance(soundSpot, gameObject.transform.position);
@@ -74,7 +111,8 @@ public class Murderer : MonoBehaviour {
         return false;
     }
 
-    public bool CheckMinDistanse() {
+    public bool CheckMinDistanse()
+    {
         if (soundSpot == Vector3.zero) return false;
 
         float distance = Vector3.Distance(soundSpot, gameObject.transform.position);
@@ -85,7 +123,8 @@ public class Murderer : MonoBehaviour {
         return false;
     }
 
-    public void UpdateSpot(Vector3 spot) {
+    public void UpdateSpot(Vector3 spot)
+    {
         soundSpot = spot;
         agent.SetDestination(soundSpot);
     }
@@ -102,16 +141,27 @@ public class Murderer : MonoBehaviour {
         {
             float mindistance = 1000.0f;
             float tempdistance = 0;
-            int savepoint = 0;
-            for (int i =0; i < wayPoints.Length; ++i){
-                tempdistance = Vector3.Distance(transform.position, wayPoints[i].transform.position);
-                if (tempdistance < mindistance){
+            int savepoint = -1;
+            for (int i = 0; i < wayPoints.Length; ++i)
+            {
+                tempdistance = Vector3.Distance(transform.position, wayPoints[LevelManager.Instance.currlevel].points[i].transform.position);
+                if (tempdistance < mindistance)
+                {
                     savepoint = i;
                     mindistance = tempdistance;
                 }
             }
+            if (savepoint == -1)
+                return;
+
+            if (wayPoints[LevelManager.Instance.currlevel].points[savepoint] == null)
+            {
+                ErrorAdmin.ErrorMessegeFromObject("wayPoints[LevelManager.Instance.currlevel].points[savepoint] is null", "FoundWayPoint()", gameObject);
+                return;
+            }
+
             currWaypoint = savepoint;
-            agent.SetDestination(wayPoints[currWaypoint].transform.position);
+            agent.SetDestination(wayPoints[LevelManager.Instance.currlevel].points[currWaypoint].transform.position);
         }
     }
 
@@ -126,12 +176,18 @@ public class Murderer : MonoBehaviour {
         //참이면 다음 웨이포인트로
         if (CheckToCloseWayPoint())
         {
-            Debug.Log("Arrive Waypoint["+currWaypoint+"]");
+            Debug.Log("Arrive Waypoint[" + currWaypoint + "]");
             currWaypoint++;
-            if (currWaypoint >= wayPoints.Length)
+            if (currWaypoint >= wayPoints[LevelManager.Instance.currlevel].points.Length)
                 currWaypoint = 0;
 
-            agent.SetDestination(wayPoints[currWaypoint].transform.position);
+            if (wayPoints[LevelManager.Instance.currlevel].points[currWaypoint] == null)
+            {
+                ErrorAdmin.ErrorMessegeFromObject("wayPoints[LevelManager.Instance.currlevel].points[0] is null", "Walking()", gameObject);
+                return;
+            }
+
+            agent.SetDestination(wayPoints[LevelManager.Instance.currlevel].points[currWaypoint].transform.position);
         }
     }
 
@@ -143,7 +199,13 @@ public class Murderer : MonoBehaviour {
             return false;
         }
 
-        if ((Vector3.Distance(transform.position, wayPoints[currWaypoint].transform.position) < 0.15))
+        if (wayPoints[LevelManager.Instance.currlevel].points[currWaypoint] == null)
+        {
+            ErrorAdmin.ErrorMessegeFromObject("wayPoints[LevelManager.Instance.currlevel].points[currWaypoint] is null", "CheckToCloseWayPoint()", gameObject);
+            return false;
+        }
+
+        if ((Vector3.Distance(transform.position, wayPoints[LevelManager.Instance.currlevel].points[currWaypoint].transform.position) < 0.15))
             return true;
 
         return false;
@@ -155,7 +217,8 @@ public class Murderer : MonoBehaviour {
         currWaypoint = -1;
     }
 
-    public IEnumerator StartAttack(){
+    public IEnumerator StartAttack()
+    {
         while (true)
         {
             animator.SetBool("isAttack", true);

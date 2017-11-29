@@ -19,17 +19,18 @@ public class LevelManager : MonoBehaviour {
         }
     }
 
-    private GameObject loadingMap;
-    private GameObject presentMap;
     private GameObject player;
+    private GameObject murderer;
     private bool isLoad;
     private bool isTimer;
     private float fTime;
     private int nextlevelnum;
 
     // -. Map 데이터
-    //public enum LevelName {invalid=-1, tutorial, size }
+    //public enum LevelName {invalid=-1,Loading, tutorial, size }
     public LevelData[] leveldatas;
+    public float waitingTime;
+    public int currlevel = 0;   //0은 로딩맵
 
     void Awake()
     {
@@ -46,73 +47,85 @@ public class LevelManager : MonoBehaviour {
     }
 
     void Start () {
-        // 1. 로딩맵 생성
-        loadingMap = GameObject.FindGameObjectWithTag("LoadingMap");
-        if (!loadingMap) {
-            Debug.Log("로딩 맵 생성");
-            loadingMap = new GameObject();
-            presentMap.name = "LoadingMap";
-            loadingMap.tag = "LoadingMap";
-            loadingMap.transform.position = Vector3.zero;
-        }
-
-        // 2. 현재맵 생성
-        presentMap = GameObject.FindGameObjectWithTag("PresentMap");
-        if (!presentMap) {
-            Debug.Log("현재 맵 생성");
-            presentMap = new GameObject();
-            presentMap.name = "Map";
-            presentMap.tag = "PresentMap";
-            presentMap.transform.position = Vector3.zero;
-        }
-
+        currlevel = 0;
+        isLoad = false;
         player = GameObject.FindGameObjectWithTag("Player");
+        murderer = GameObject.FindGameObjectWithTag("Murderer");
     }
 	
 	void Update () {
-        // -. 로딩 현황이나 시간을 측정
         if (isTimer)
             fTime += Time.deltaTime;
 
-        if (fTime > 10.0f && !isLoad)
+        if (fTime > waitingTime && isLoad)
         {
-            player.transform.position = leveldatas[nextlevelnum].point;
+            player.transform.position = leveldatas[nextlevelnum].playerPoint;
+            MoveToLevelMap();
+
             fTime = 0.0f;
             isTimer = false;
+            isLoad = false;
+            currlevel = nextlevelnum;
+            nextlevelnum = 0;
         }
-
     }
 
-    void CreatePresentMap(int _mapNum)
+    void MoveToLoadingMap()
     {
-        if (leveldatas.Length < _mapNum) return;
+        player.transform.position = leveldatas[0].playerPoint;
+        murderer.transform.position = leveldatas[0].murdererPoint;
 
-        //데이터를 기반한 맵 생성.
-        for (int i=0; i< leveldatas[_mapNum].objects.Length; ++i)
+        Murderer murdererState = murderer.GetComponent<Murderer>();
+        murdererState.CurrStateSetEmpty();
+
+        murdererState.ResetSoundSpot();
+        murdererState.ResetWaypoint();
+    }
+
+    void CurrentLevelSetUnactive()
+    {
+        leveldatas[currlevel].objectParent.SetActive(false);
+
+        foreach (GameObject obj in leveldatas[currlevel].objectParent.GetComponentsInChildren<GameObject>())
         {
-            //생성 진행도
-            Instantiate(leveldatas[_mapNum].objects[i], presentMap.transform);
+            obj.SetActive(false);
         }
-        isLoad = false;
     }
 
-    void ClearThePresentMap()
+    void NextLevelSetActive()
     {
-        foreach (Transform child in presentMap.transform)
+        leveldatas[nextlevelnum].objectParent.SetActive(true);
+
+        foreach (GameObject obj in leveldatas[nextlevelnum].objectParent.GetComponentsInChildren<GameObject>())
         {
-            GameObject.Destroy(child.gameObject);
+            obj.SetActive(true);
         }
     }
 
-    public void ChangeLevel(int _levelnum)
+    void MoveToLevelMap()
     {
-        if (_levelnum > leveldatas.Length) return;
-        nextlevelnum = _levelnum;
+        player.transform.position = leveldatas[nextlevelnum].playerPoint;
+        murderer.transform.position = leveldatas[nextlevelnum].murdererPoint;
+
+        Murderer murdererState = murderer.GetComponent<Murderer>();
+        murdererState.CurrStateSetWait();
+    }
+
+    public void ChangeLevel(int _nextlevel)
+    {
+        if (_nextlevel < 0 || _nextlevel > leveldatas.Length)
+        {
+            ErrorAdmin.ErrorMessege("_nextlevel is unexit.", "ChangeLevel(int _nextlevel)");
+            return;
+        }
+
+        nextlevelnum = _nextlevel;
+
+        MoveToLoadingMap();
+
+        CurrentLevelSetUnactive();
+        NextLevelSetActive();
+
         isLoad = true;
-        isTimer = true;
-        player.transform.position = loadingMap.transform.position;
-
-        ClearThePresentMap();
-        CreatePresentMap(_levelnum);
     }
 }
