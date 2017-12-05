@@ -120,7 +120,7 @@ public class FingerOfMidas : MonoBehaviour {
         {
             Rigidbody body = lookObject.GetComponent<Rigidbody>();
             MovedObject moveOb = lookObject.GetComponent<MovedObject>();
-
+            moveOb.ResetTriger();
             if (body == null) {
                 ErrorAdmin.WarningMessegeFromObject("lookObject.GetComponent<Rigidbody>() == null", "PushTheObject()", lookObject);
                 return;

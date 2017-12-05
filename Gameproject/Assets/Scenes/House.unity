@@ -308,6 +308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2898537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,7 +322,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &2898538
 BoxCollider:
@@ -433,7 +434,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &6620410
 MeshRenderer:
@@ -493,6 +493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &7419659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,7 +507,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &7477377
 Prefab:
@@ -881,6 +882,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 54666446226745278, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54666446226745278, guid: 5e9e851c0e142814dac026a256ba2ac0,
+        type: 2}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -956,7 +967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &7869555
 MeshRenderer:
@@ -1012,6 +1022,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &10510116
 Prefab:
   m_ObjectHideFlags: 0
@@ -1094,7 +1106,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &15653436
 MonoBehaviour:
@@ -1109,6 +1120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &16647889
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,6 +2115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &29703910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2114,7 +2129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &35377743
 Prefab:
@@ -2190,7 +2204,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &38849222
 MonoBehaviour:
@@ -2205,6 +2218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &38875334 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 116256, guid: 6f9632de9674c8f49b596fc8bbbf3ef0, type: 2}
@@ -2221,7 +2236,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &38875336
 MonoBehaviour:
@@ -2236,6 +2250,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &39075736
 Prefab:
   m_ObjectHideFlags: 0
@@ -2544,6 +2560,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &40925984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2556,7 +2574,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &45081449
 Prefab:
@@ -2790,7 +2807,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &46895110
 MonoBehaviour:
@@ -2805,6 +2821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &48137721
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,7 +3215,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &55016282
 BoxCollider:
@@ -3389,7 +3406,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &57913168
 MonoBehaviour:
@@ -3404,6 +3420,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &58322676
 Prefab:
   m_ObjectHideFlags: 0
@@ -3634,6 +3652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &63335204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3646,7 +3666,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &63335205
 BoxCollider:
@@ -4826,7 +4845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &93226114
 MonoBehaviour:
@@ -4841,6 +4859,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &96959167
 Prefab:
   m_ObjectHideFlags: 0
@@ -5039,6 +5059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &101344807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5051,7 +5073,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &101344808
 BoxCollider:
@@ -5470,7 +5491,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &110405677
 MonoBehaviour:
@@ -5485,6 +5505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &111099544
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,7 +5636,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &111509780
 BoxCollider:
@@ -6001,7 +6022,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &115962074
 MonoBehaviour:
@@ -6016,6 +6036,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &116269007
 Prefab:
   m_ObjectHideFlags: 0
@@ -6777,6 +6799,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &126917913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6789,7 +6813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &126995461
 Prefab:
@@ -6993,7 +7016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &132619286
 MonoBehaviour:
@@ -7008,6 +7030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &132738226
 Prefab:
   m_ObjectHideFlags: 0
@@ -7323,6 +7347,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &143159483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7335,7 +7361,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &143159484
 BoxCollider:
@@ -7493,7 +7518,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &146000425
 BoxCollider:
@@ -7755,7 +7779,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &149474872
 MeshRenderer:
@@ -7971,7 +7994,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &153854636
 BoxCollider:
@@ -8040,6 +8062,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &154158913
 GameObject:
   m_ObjectHideFlags: 0
@@ -8087,6 +8111,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &154158916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8099,7 +8125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &154158917
 BoxCollider:
@@ -8171,7 +8196,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &154684485
 MonoBehaviour:
@@ -8186,6 +8210,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &155126530 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 141474, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -8202,7 +8228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &155126532
 MonoBehaviour:
@@ -8217,6 +8242,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &156019538
 Prefab:
   m_ObjectHideFlags: 0
@@ -8391,7 +8418,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &164177431
 MeshRenderer:
@@ -8447,6 +8473,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &164740863
 Prefab:
   m_ObjectHideFlags: 0
@@ -8592,6 +8620,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &169382138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8604,7 +8634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &169382139
 MeshRenderer:
@@ -8790,7 +8819,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &170003510
 MeshRenderer:
@@ -9122,6 +9150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &173339271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9134,7 +9164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &176459775
 GameObject:
@@ -9235,7 +9264,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &176459781
 MonoBehaviour:
@@ -9250,6 +9278,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &178617775
 Prefab:
   m_ObjectHideFlags: 0
@@ -9609,7 +9639,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &180229671
 MonoBehaviour:
@@ -9624,6 +9653,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &181255389
 GameObject:
   m_ObjectHideFlags: 0
@@ -9683,6 +9714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &181255393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9695,7 +9728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &181255394
 MeshRenderer:
@@ -9919,7 +9951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &182152525
 MonoBehaviour:
@@ -9934,6 +9965,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &183071270
 Transform:
   m_ObjectHideFlags: 0
@@ -10160,7 +10193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &194141633
 MonoBehaviour:
@@ -10175,6 +10207,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &195547440
 Prefab:
   m_ObjectHideFlags: 0
@@ -10449,7 +10483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &197926549
 MeshRenderer:
@@ -10505,6 +10538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &198610020
 Prefab:
   m_ObjectHideFlags: 0
@@ -10702,6 +10737,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &201127338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10714,7 +10751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &201127339
 BoxCollider:
@@ -10855,7 +10891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &201953033
 MonoBehaviour:
@@ -10870,6 +10905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &203185830
 Prefab:
   m_ObjectHideFlags: 0
@@ -11181,6 +11218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &205767668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11193,7 +11232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &205767669
 MeshRenderer:
@@ -11773,7 +11811,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &214076155
 MonoBehaviour:
@@ -11788,6 +11825,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &214144377
 Prefab:
   m_ObjectHideFlags: 0
@@ -12508,7 +12547,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &221968268
 MonoBehaviour:
@@ -12523,6 +12561,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &222297354
 Prefab:
   m_ObjectHideFlags: 0
@@ -12941,7 +12981,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &227393654
 BoxCollider:
@@ -13013,7 +13052,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &227810585
 MonoBehaviour:
@@ -13028,6 +13066,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &229866081
 Prefab:
   m_ObjectHideFlags: 0
@@ -13256,7 +13296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &238094392
 MeshRenderer:
@@ -13430,7 +13469,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &239776815
 BoxCollider:
@@ -13499,6 +13537,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &242472680
 GameObject:
   m_ObjectHideFlags: 0
@@ -13573,6 +13613,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &242472685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13585,7 +13627,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &242472686
 BoxCollider:
@@ -13701,6 +13742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &242734671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13713,7 +13756,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &242734672
 BoxCollider:
@@ -13869,6 +13911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &244699989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13881,7 +13925,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &245278496
 GameObject:
@@ -13942,6 +13985,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &245278500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13954,7 +13999,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &245278501
 MeshRenderer:
@@ -14321,6 +14365,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &254496457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14333,7 +14379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &254496458
 BoxCollider:
@@ -14591,7 +14636,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &258745929
 MonoBehaviour:
@@ -14606,6 +14650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &259853434
 GameObject:
   m_ObjectHideFlags: 0
@@ -14705,7 +14751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &259853440
 MonoBehaviour:
@@ -14720,6 +14765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &261857293
 Prefab:
   m_ObjectHideFlags: 0
@@ -15067,6 +15114,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &274110867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15079,7 +15128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &278031470
 Prefab:
@@ -15334,6 +15382,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &279733031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15346,7 +15396,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &279733032
 BoxCollider:
@@ -15545,7 +15594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &281544133
 MeshRenderer:
@@ -15601,6 +15649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &282377426
 Prefab:
   m_ObjectHideFlags: 0
@@ -16387,7 +16437,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &289623045
 MonoBehaviour:
@@ -16402,6 +16451,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &290107885
 Prefab:
   m_ObjectHideFlags: 0
@@ -16655,7 +16706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &290763387
 MonoBehaviour:
@@ -16670,6 +16720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &292001236
 Prefab:
   m_ObjectHideFlags: 0
@@ -16993,7 +17045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &295859348
 MonoBehaviour:
@@ -17008,6 +17059,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &296274974
 Prefab:
   m_ObjectHideFlags: 0
@@ -17152,7 +17205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &298767378
 MonoBehaviour:
@@ -17167,6 +17219,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &299011761 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 113242, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -17183,7 +17237,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &299011767
 MonoBehaviour:
@@ -17198,6 +17251,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &302164290
 Prefab:
   m_ObjectHideFlags: 0
@@ -17354,7 +17409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &303794792
 MonoBehaviour:
@@ -17369,6 +17423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &303987061
 Prefab:
   m_ObjectHideFlags: 0
@@ -17824,6 +17880,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &312141288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17836,7 +17894,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &312141289
 BoxCollider:
@@ -17977,7 +18034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &313920878
 MonoBehaviour:
@@ -17992,6 +18048,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &314805342
 Prefab:
   m_ObjectHideFlags: 0
@@ -18652,7 +18710,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &326755677
 MeshRenderer:
@@ -18708,6 +18765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &328680499
 Prefab:
   m_ObjectHideFlags: 0
@@ -18879,7 +18938,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &329909835
 MonoBehaviour:
@@ -18894,6 +18952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &331375347
 Prefab:
   m_ObjectHideFlags: 0
@@ -19140,6 +19200,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &335398672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19152,7 +19214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &335398673
 BoxCollider:
@@ -19355,7 +19416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &336991080
 MonoBehaviour:
@@ -19370,6 +19430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &339175140 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 161916, guid: 0b12c4ef2dc2c86409fa941ea0b8b4c2, type: 2}
@@ -19387,6 +19449,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &339175142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19399,7 +19463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &341767271
 GameObject:
@@ -19458,7 +19521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &341767275
 MeshRenderer:
@@ -19943,7 +20005,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &355692848
 BoxCollider:
@@ -20236,7 +20297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &357768060
 MonoBehaviour:
@@ -20251,6 +20311,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &358371388
 Prefab:
   m_ObjectHideFlags: 0
@@ -20615,7 +20677,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &363963590
 MonoBehaviour:
@@ -20630,6 +20691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &364120530
 Prefab:
   m_ObjectHideFlags: 0
@@ -20921,6 +20984,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &375548617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20933,7 +20998,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &376725330
 GameObject:
@@ -21035,7 +21099,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &376725336
 MonoBehaviour:
@@ -21050,6 +21113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &377614704
 GameObject:
   m_ObjectHideFlags: 0
@@ -21149,7 +21214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &377614710
 MonoBehaviour:
@@ -21164,6 +21228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &377979935
 Prefab:
   m_ObjectHideFlags: 0
@@ -21563,7 +21629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &383255050
 MonoBehaviour:
@@ -21578,6 +21643,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &383777230 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 102160, guid: 9e1c20350bf45374baaf7ad4fffcee4c, type: 2}
@@ -21594,7 +21661,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &383777235
 MonoBehaviour:
@@ -21609,6 +21675,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &384243106
 Prefab:
   m_ObjectHideFlags: 0
@@ -21683,7 +21751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &384719232
 MonoBehaviour:
@@ -21698,6 +21765,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &388437873
 Prefab:
   m_ObjectHideFlags: 0
@@ -21827,6 +21896,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &388869308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21839,7 +21910,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &391192384
 Prefab:
@@ -22707,7 +22777,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &401727182
 BoxCollider:
@@ -22776,6 +22845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &402265583
 Prefab:
   m_ObjectHideFlags: 0
@@ -23029,6 +23100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &403828624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23041,7 +23114,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &405767421
 GameObject:
@@ -23389,7 +23461,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &412660069
 MonoBehaviour:
@@ -23404,6 +23475,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &412986664
 Prefab:
   m_ObjectHideFlags: 0
@@ -24493,6 +24566,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &442313045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24505,7 +24580,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &442313046
 BoxCollider:
@@ -24706,7 +24780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &444692211
 MeshRenderer:
@@ -24971,7 +25044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &449550516
 MonoBehaviour:
@@ -24986,6 +25058,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &449731711
 GameObject:
   m_ObjectHideFlags: 0
@@ -25043,7 +25117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &449731715
 MeshRenderer:
@@ -25321,7 +25394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &454819867
 MeshRenderer:
@@ -25655,6 +25727,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &458648866
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25667,7 +25741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &458648867
 BoxCollider:
@@ -26138,6 +26211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &464786979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26150,7 +26225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &464786980
 BoxCollider:
@@ -26386,6 +26460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &468277509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26398,7 +26474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &468494283 stripped
 GameObject:
@@ -26416,7 +26491,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &468494285
 MonoBehaviour:
@@ -26431,6 +26505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &468840071
 GameObject:
   m_ObjectHideFlags: 0
@@ -26488,7 +26564,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &468840075
 MeshRenderer:
@@ -26760,7 +26835,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &470908836
 MonoBehaviour:
@@ -26775,6 +26849,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &473318259
 Prefab:
   m_ObjectHideFlags: 0
@@ -27067,7 +27143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &485122421
 Prefab:
@@ -27171,7 +27246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &485406972
 MonoBehaviour:
@@ -27186,6 +27260,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &486482903
 Prefab:
   m_ObjectHideFlags: 0
@@ -27636,7 +27712,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &496352748
 MonoBehaviour:
@@ -27651,6 +27726,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &496439824
 Prefab:
   m_ObjectHideFlags: 0
@@ -28285,6 +28362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &509828984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28297,7 +28376,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &509994941
 Prefab:
@@ -28401,7 +28479,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &511348531
 MonoBehaviour:
@@ -28416,6 +28493,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &511870604
 GameObject:
   m_ObjectHideFlags: 0
@@ -28463,6 +28542,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &511870607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28475,7 +28556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &511870608
 BoxCollider:
@@ -28630,7 +28710,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &512493166
 MonoBehaviour:
@@ -28645,6 +28724,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &512566292
 Prefab:
   m_ObjectHideFlags: 0
@@ -29163,7 +29244,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &523390857
 MonoBehaviour:
@@ -29178,6 +29258,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &524226068 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 186618, guid: 69ab184bbd1cb204da54bde318df872b, type: 2}
@@ -29195,6 +29277,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &524226070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29207,7 +29291,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &525120539
 GameObject:
@@ -29410,7 +29493,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &528091063
 MonoBehaviour:
@@ -29425,6 +29507,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &528309685
 Prefab:
   m_ObjectHideFlags: 0
@@ -29896,7 +29980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &534601278
 MeshRenderer:
@@ -29952,6 +30035,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &535587823
 Prefab:
   m_ObjectHideFlags: 0
@@ -30418,7 +30503,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &544943389
 MeshRenderer:
@@ -30474,6 +30558,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &545001956
 Transform:
   m_ObjectHideFlags: 0
@@ -30689,7 +30775,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &552504641
 MonoBehaviour:
@@ -30704,6 +30789,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &553671524
 Prefab:
   m_ObjectHideFlags: 0
@@ -30868,7 +30955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &554609784
 MonoBehaviour:
@@ -30883,6 +30969,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &554711039
 GameObject:
   m_ObjectHideFlags: 0
@@ -31070,7 +31158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &564078307
 MonoBehaviour:
@@ -31085,6 +31172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &568829125
 Prefab:
   m_ObjectHideFlags: 0
@@ -31537,7 +31626,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &578449334
 MonoBehaviour:
@@ -31552,6 +31640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &579921532
 Prefab:
   m_ObjectHideFlags: 0
@@ -31729,6 +31819,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &583431477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31741,7 +31833,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &583431478
 BoxCollider:
@@ -32101,7 +32192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &589787863
 MonoBehaviour:
@@ -32116,6 +32206,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &590694962
 Prefab:
   m_ObjectHideFlags: 0
@@ -32413,6 +32505,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &593916040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32425,7 +32519,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &595031428
 GameObject:
@@ -32658,7 +32751,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &603525640
 BoxCollider:
@@ -32726,7 +32818,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &603525644
 MonoBehaviour:
@@ -32741,6 +32832,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &605631784
 Prefab:
   m_ObjectHideFlags: 0
@@ -33087,7 +33180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &614241394
 MonoBehaviour:
@@ -33102,6 +33194,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &614505733
 GameObject:
   m_ObjectHideFlags: 0
@@ -33159,7 +33253,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &614505737
 MeshRenderer:
@@ -33284,7 +33377,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &617055023
 MonoBehaviour:
@@ -33299,6 +33391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &617275792 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 141474, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -33315,7 +33409,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &617275794
 MonoBehaviour:
@@ -33330,6 +33423,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &617702664
 Prefab:
   m_ObjectHideFlags: 0
@@ -33569,6 +33664,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &621470290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33581,7 +33678,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &621808887
 Prefab:
@@ -33873,7 +33969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &633853005
 MonoBehaviour:
@@ -33888,6 +33983,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &635897536
 Prefab:
   m_ObjectHideFlags: 0
@@ -34158,7 +34255,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &637166957
 MonoBehaviour:
@@ -34173,6 +34269,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &637973745
 Prefab:
   m_ObjectHideFlags: 0
@@ -34362,7 +34460,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &648176178
 MonoBehaviour:
@@ -34377,6 +34474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &649227358 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1352217739070768, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -34840,7 +34939,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &656233139
 MonoBehaviour:
@@ -34854,7 +34952,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &656233140
 MonoBehaviour:
@@ -34868,7 +34965,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &656233141
 MonoBehaviour:
@@ -34882,7 +34978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!4 &656233142
 Transform:
@@ -35164,7 +35259,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &656233159
 MonoBehaviour:
@@ -35179,6 +35273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &656233160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35191,7 +35287,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &656233161
 MonoBehaviour:
@@ -35206,6 +35301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &656233162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35219,6 +35316,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &656233163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35232,6 +35331,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &656968293
 Prefab:
   m_ObjectHideFlags: 0
@@ -35461,7 +35562,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &657942093
 MonoBehaviour:
@@ -35476,6 +35576,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &659426695
 GameObject:
   m_ObjectHideFlags: 0
@@ -35561,7 +35663,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &659426700
 MonoBehaviour:
@@ -35576,6 +35677,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &659630935
 Prefab:
   m_ObjectHideFlags: 0
@@ -35781,7 +35884,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &663683526
 MeshRenderer:
@@ -36463,7 +36565,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &682749392
 MonoBehaviour:
@@ -36478,6 +36579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &683199663
 Prefab:
   m_ObjectHideFlags: 0
@@ -36666,6 +36769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &684731138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36678,7 +36783,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &688200957
 Prefab:
@@ -37647,6 +37751,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &710270271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37659,7 +37765,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &715680730
 Prefab:
@@ -37731,7 +37836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &716589812
 MonoBehaviour:
@@ -37746,6 +37850,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &718363956
 GameObject:
   m_ObjectHideFlags: 0
@@ -37831,7 +37937,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &718363961
 MonoBehaviour:
@@ -37846,6 +37951,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &719636733
 Prefab:
   m_ObjectHideFlags: 0
@@ -38379,7 +38486,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &724705907
 MonoBehaviour:
@@ -38394,6 +38500,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &726308721
 Prefab:
   m_ObjectHideFlags: 0
@@ -38601,6 +38709,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &729766421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38613,7 +38723,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &729766422
 MeshRenderer:
@@ -38738,7 +38847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &733612340
 MonoBehaviour:
@@ -38753,6 +38861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &734074649
 Transform:
   m_ObjectHideFlags: 0
@@ -38871,6 +38981,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &739849851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38883,7 +38995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &739849852
 BoxCollider:
@@ -39463,6 +39574,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &750070796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39475,7 +39588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &750936611
 Prefab:
@@ -39688,7 +39800,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &757213168
 MonoBehaviour:
@@ -39703,6 +39814,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &757386738
 Prefab:
   m_ObjectHideFlags: 0
@@ -39789,7 +39902,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &757880760
 MonoBehaviour:
@@ -39804,6 +39916,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &761790130
 Transform:
   m_ObjectHideFlags: 0
@@ -39849,7 +39963,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &761790133
 BoxCollider:
@@ -39918,6 +40031,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &761947367
 Prefab:
   m_ObjectHideFlags: 0
@@ -40385,7 +40500,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &771183162
 MeshRenderer:
@@ -40440,7 +40554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &771183165
 MonoBehaviour:
@@ -40455,6 +40568,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &771383088
 Prefab:
   m_ObjectHideFlags: 0
@@ -40834,7 +40949,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &779903271
 MonoBehaviour:
@@ -40849,6 +40963,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &780686683
 GameObject:
   m_ObjectHideFlags: 0
@@ -41326,7 +41442,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &788890068
 MonoBehaviour:
@@ -41340,7 +41455,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &788890069
 MonoBehaviour:
@@ -41354,7 +41468,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &788890070
 MonoBehaviour:
@@ -41368,7 +41481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!4 &788890071
 Transform:
@@ -41650,7 +41762,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &788890088
 MonoBehaviour:
@@ -41665,6 +41776,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &788890089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41677,7 +41790,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &788890090
 MonoBehaviour:
@@ -41692,6 +41804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &788890091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41705,6 +41819,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &788890092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41718,6 +41834,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &789093484
 GameObject:
   m_ObjectHideFlags: 0
@@ -41803,7 +41921,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &789093489
 MonoBehaviour:
@@ -41818,6 +41935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &789220389
 GameObject:
   m_ObjectHideFlags: 0
@@ -41932,6 +42051,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &789220396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41944,7 +42065,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!4 &789585781
 Transform:
@@ -42384,7 +42504,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &800713788
 MonoBehaviour:
@@ -42399,6 +42518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &801194439
 GameObject:
   m_ObjectHideFlags: 0
@@ -42515,7 +42636,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &801194446
 MonoBehaviour:
@@ -42530,6 +42650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &802483179
 Prefab:
   m_ObjectHideFlags: 0
@@ -42659,6 +42781,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &806126275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42671,7 +42795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &807245236
 Prefab:
@@ -42989,6 +43112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &814880634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43001,7 +43126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &818579231
 Prefab:
@@ -43430,7 +43554,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &828508936
 MonoBehaviour:
@@ -43445,6 +43568,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &828657088
 Prefab:
   m_ObjectHideFlags: 0
@@ -43879,7 +44004,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &832477049
 MonoBehaviour:
@@ -43894,6 +44018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &832670408
 Prefab:
   m_ObjectHideFlags: 0
@@ -44061,6 +44187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &833775070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44073,7 +44201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &833775071
 BoxCollider:
@@ -44289,7 +44416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &837343442
 MeshRenderer:
@@ -44345,6 +44471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &838772782
 Prefab:
   m_ObjectHideFlags: 0
@@ -44700,7 +44828,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &845052688
 MonoBehaviour:
@@ -44715,6 +44842,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &846028186
 Prefab:
   m_ObjectHideFlags: 0
@@ -44998,7 +45127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &847252886
 MeshRenderer:
@@ -45100,6 +45228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &847440094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45112,7 +45242,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &847440095
 MeshRenderer:
@@ -45312,7 +45441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &849450083
 MonoBehaviour:
@@ -45327,6 +45455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &849613389
 Transform:
   m_ObjectHideFlags: 0
@@ -45562,7 +45692,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &852978317
 MonoBehaviour:
@@ -45577,6 +45706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &853558725
 Prefab:
   m_ObjectHideFlags: 0
@@ -45722,7 +45853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &854912047
 MeshRenderer:
@@ -46297,7 +46427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &859712024
 MonoBehaviour:
@@ -46312,6 +46441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &859908829
 GameObject:
   m_ObjectHideFlags: 0
@@ -46974,7 +47105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &872352078
 MonoBehaviour:
@@ -46989,6 +47119,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &872849676
 GameObject:
   m_ObjectHideFlags: 0
@@ -48387,6 +48519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &900755254
 Transform:
   m_ObjectHideFlags: 0
@@ -48413,6 +48547,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &900755256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48425,7 +48561,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &900755257
 BoxCollider:
@@ -48597,7 +48732,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &901071396
 MonoBehaviour:
@@ -48612,6 +48746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &901214426
 Prefab:
   m_ObjectHideFlags: 0
@@ -49034,6 +49170,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &908356975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49046,7 +49184,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &908356976
 BoxCollider:
@@ -49387,7 +49524,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &915197673
 MeshRenderer:
@@ -49443,6 +49579,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &917174803 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 179082, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -49459,7 +49597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &917174809
 MonoBehaviour:
@@ -49474,6 +49611,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &918621487
 Prefab:
   m_ObjectHideFlags: 0
@@ -49617,7 +49756,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &918783303
 MonoBehaviour:
@@ -49632,6 +49770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &919487570
 GameObject:
   m_ObjectHideFlags: 0
@@ -50386,7 +50526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &929684616
 MonoBehaviour:
@@ -50401,6 +50540,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &931508953
 GameObject:
   m_ObjectHideFlags: 0
@@ -50501,6 +50642,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &931508959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50513,7 +50656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &932846733
 Prefab:
@@ -50663,7 +50805,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &935284414
 MonoBehaviour:
@@ -50678,6 +50819,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &936019755
 Prefab:
   m_ObjectHideFlags: 0
@@ -50905,6 +51048,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &937054790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50917,7 +51062,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &939383525
 GameObject:
@@ -51223,7 +51367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &941681489
 MeshRenderer:
@@ -51410,7 +51553,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &942671246
 MonoBehaviour:
@@ -51425,6 +51567,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &945506394
 GameObject:
   m_ObjectHideFlags: 0
@@ -51874,7 +52018,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &951910977
 MonoBehaviour:
@@ -51889,6 +52032,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &953133871
 Prefab:
   m_ObjectHideFlags: 0
@@ -52541,6 +52686,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &967911566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52553,7 +52700,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &969549537
 GameObject:
@@ -52643,7 +52789,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &973362444
 MonoBehaviour:
@@ -52658,6 +52803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &973891613
 Prefab:
   m_ObjectHideFlags: 0
@@ -52898,6 +53045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &976145569
 Transform:
   m_ObjectHideFlags: 0
@@ -53392,7 +53541,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &983929814
 MonoBehaviour:
@@ -53407,6 +53555,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &983999126
 GameObject:
   m_ObjectHideFlags: 0
@@ -53464,7 +53614,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &983999130
 MeshRenderer:
@@ -54290,6 +54439,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1004041259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54302,7 +54453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1006950385
 Prefab:
@@ -54714,7 +54864,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1011907938
 MeshRenderer:
@@ -55335,6 +55484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 232869541}
 --- !u!114 &1021830119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55347,7 +55498,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1025237755
 Prefab:
@@ -55829,7 +55979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1036349793
 MonoBehaviour:
@@ -55844,6 +55993,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1037696455
 GameObject:
   m_ObjectHideFlags: 0
@@ -56003,7 +56154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1041328335
 MonoBehaviour:
@@ -56018,6 +56168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1043629005
 GameObject:
   m_ObjectHideFlags: 0
@@ -57051,7 +57203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1068810950
 BoxCollider:
@@ -57837,7 +57988,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1080382744
 MonoBehaviour:
@@ -57852,6 +58002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1080382745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57864,7 +58016,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1080382746
 BoxCollider:
@@ -58006,7 +58157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1080911778
 MonoBehaviour:
@@ -58021,6 +58171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1088837718
 Prefab:
   m_ObjectHideFlags: 0
@@ -58365,6 +58517,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 232869541}
 --- !u!114 &1092422497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58377,7 +58531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1093393537
 Prefab:
@@ -58481,7 +58634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1095040615
 MonoBehaviour:
@@ -58496,6 +58648,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1096359316
 Prefab:
   m_ObjectHideFlags: 0
@@ -59034,7 +59188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1104772291
 MonoBehaviour:
@@ -59049,6 +59202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &1106835971
 Transform:
   m_ObjectHideFlags: 0
@@ -59870,7 +60025,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1118150946
 MonoBehaviour:
@@ -59885,6 +60039,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1119191162
 GameObject:
   m_ObjectHideFlags: 0
@@ -61318,7 +61474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1143961301
 MeshRenderer:
@@ -61636,7 +61791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1148580842
 MeshRenderer:
@@ -61841,7 +61995,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1152318330
 MonoBehaviour:
@@ -61856,6 +62009,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1153097082
 Prefab:
   m_ObjectHideFlags: 0
@@ -62262,7 +62417,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1168221489
 MonoBehaviour:
@@ -62277,6 +62431,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1168627762
 Prefab:
   m_ObjectHideFlags: 0
@@ -62450,7 +62606,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1172493556
 MonoBehaviour:
@@ -62465,6 +62620,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1172981157
 Prefab:
   m_ObjectHideFlags: 0
@@ -63242,7 +63399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1195393082
 MonoBehaviour:
@@ -63257,6 +63413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1196399403
 Prefab:
   m_ObjectHideFlags: 0
@@ -63645,7 +63803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1215597121
 MonoBehaviour:
@@ -63660,6 +63817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1216218518
 Prefab:
   m_ObjectHideFlags: 0
@@ -64052,6 +64211,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1223679039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64064,7 +64225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &1224575667 stripped
 GameObject:
@@ -64083,6 +64243,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1224575669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64095,7 +64257,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1225353530
 Prefab:
@@ -64175,7 +64336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1228787414
 MonoBehaviour:
@@ -64190,6 +64350,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &1228867596
 Transform:
   m_ObjectHideFlags: 0
@@ -64767,7 +64929,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1244268253
 MeshRenderer:
@@ -65223,7 +65384,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1247034236
 MonoBehaviour:
@@ -65238,6 +65398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1248863456
 GameObject:
   m_ObjectHideFlags: 0
@@ -65988,7 +66150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1264057689
 BoxCollider:
@@ -66057,6 +66218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1264057693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66069,7 +66232,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1264105360
 Prefab:
@@ -66248,7 +66410,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1272407066
 MonoBehaviour:
@@ -66263,6 +66424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1273389070
 Prefab:
   m_ObjectHideFlags: 0
@@ -67826,7 +67989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1300804680
 MonoBehaviour:
@@ -67841,6 +68003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1301173034
 Prefab:
   m_ObjectHideFlags: 0
@@ -69252,7 +69416,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1322226041
 MonoBehaviour:
@@ -69267,6 +69430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1322417607
 Prefab:
   m_ObjectHideFlags: 0
@@ -69674,7 +69839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325026999
 MonoBehaviour:
@@ -69688,7 +69852,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027000
 MonoBehaviour:
@@ -69702,7 +69865,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027001
 MonoBehaviour:
@@ -69716,7 +69878,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027002
 MonoBehaviour:
@@ -69730,7 +69891,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027003
 MonoBehaviour:
@@ -69744,7 +69904,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027004
 MonoBehaviour:
@@ -69758,7 +69917,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027005
 MonoBehaviour:
@@ -69772,7 +69930,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027006
 MonoBehaviour:
@@ -69786,7 +69943,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027007
 MonoBehaviour:
@@ -69800,7 +69956,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027008
 MonoBehaviour:
@@ -69814,7 +69969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325027009
 MonoBehaviour:
@@ -69828,7 +69982,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!4 &1325027010
 Transform:
@@ -70647,6 +70800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70660,6 +70815,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70673,6 +70830,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70686,6 +70845,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70699,6 +70860,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70712,6 +70875,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70725,6 +70890,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70738,6 +70905,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70751,6 +70920,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70764,6 +70935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70777,6 +70950,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1325027069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70790,6 +70965,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1325462251 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 190478, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -70806,7 +70983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1325462253
 MonoBehaviour:
@@ -70821,6 +70997,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1328080732
 Prefab:
   m_ObjectHideFlags: 0
@@ -71639,7 +71817,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1341661730
 MonoBehaviour:
@@ -71654,6 +71831,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1343247279
 Prefab:
   m_ObjectHideFlags: 0
@@ -71844,7 +72023,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1343960617
 MonoBehaviour:
@@ -71859,6 +72037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1344031824
 Prefab:
   m_ObjectHideFlags: 0
@@ -71979,7 +72159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1345278611
 MeshRenderer:
@@ -72035,6 +72214,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1346004835
 GameObject:
   m_ObjectHideFlags: 0
@@ -72223,7 +72404,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1348910965
 MonoBehaviour:
@@ -72238,6 +72418,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1349125970
 Prefab:
   m_ObjectHideFlags: 0
@@ -72366,7 +72548,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1356562397
 MonoBehaviour:
@@ -72381,6 +72562,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1357779777
 Prefab:
   m_ObjectHideFlags: 0
@@ -72459,7 +72642,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1358672289
 MonoBehaviour:
@@ -72474,6 +72656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1358948171 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 176352, guid: 1780fdcfe677de644a31a2faff72db35, type: 2}
@@ -72490,7 +72674,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1358948173
 MonoBehaviour:
@@ -72505,6 +72688,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1359194427
 Prefab:
   m_ObjectHideFlags: 0
@@ -72765,7 +72950,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1365123131
 BoxCollider:
@@ -72834,6 +73018,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1367035143
 GameObject:
   m_ObjectHideFlags: 0
@@ -72880,6 +73066,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1367035146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72892,7 +73080,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1367035147
 BoxCollider:
@@ -73089,6 +73276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1371385261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73101,7 +73290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1373082990
 Prefab:
@@ -73239,7 +73427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1380181545
 MonoBehaviour:
@@ -73254,6 +73441,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1380222597
 GameObject:
   m_ObjectHideFlags: 0
@@ -73354,6 +73543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1380222603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73366,7 +73557,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1381237779
 Prefab:
@@ -73765,7 +73955,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1387420976
 MonoBehaviour:
@@ -73780,6 +73969,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1388955824
 Prefab:
   m_ObjectHideFlags: 0
@@ -74279,7 +74470,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1393688621
 MonoBehaviour:
@@ -74294,6 +74484,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1394206999
 Prefab:
   m_ObjectHideFlags: 0
@@ -74681,7 +74873,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1402900545
 Prefab:
@@ -75396,7 +75587,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1416083786
 MeshRenderer:
@@ -75666,7 +75856,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1420291608
 MonoBehaviour:
@@ -75681,6 +75870,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1420846804 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 141420, guid: 333577a36a234a240a72533a590dcb4e, type: 2}
@@ -75697,7 +75888,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1420846809
 MonoBehaviour:
@@ -75712,6 +75902,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1422459427
 Prefab:
   m_ObjectHideFlags: 0
@@ -76003,7 +76195,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1429004764
 MonoBehaviour:
@@ -76018,6 +76209,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1430679062 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 116256, guid: 6f9632de9674c8f49b596fc8bbbf3ef0, type: 2}
@@ -76034,7 +76227,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1430679064
 MonoBehaviour:
@@ -76049,6 +76241,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1431567030
 Prefab:
   m_ObjectHideFlags: 0
@@ -76397,6 +76591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1439600903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76409,7 +76605,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1439600904
 MeshRenderer:
@@ -76564,7 +76759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1441921340
 MeshRenderer:
@@ -76620,6 +76814,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1442934754
 Prefab:
   m_ObjectHideFlags: 0
@@ -76771,7 +76967,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1444105477
 MonoBehaviour:
@@ -76786,6 +76981,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1445274866
 GameObject:
   m_ObjectHideFlags: 0
@@ -76833,6 +77030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1445274869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76845,7 +77044,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1445274870
 BoxCollider:
@@ -77310,7 +77508,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1460372370
 MonoBehaviour:
@@ -77325,6 +77522,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1463926479
 Prefab:
   m_ObjectHideFlags: 0
@@ -77522,7 +77721,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1468153018
 MonoBehaviour:
@@ -77537,6 +77735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1468379501
 Prefab:
   m_ObjectHideFlags: 0
@@ -77677,7 +77877,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1471888943
 MonoBehaviour:
@@ -77692,6 +77891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1472556749
 Prefab:
   m_ObjectHideFlags: 0
@@ -77964,7 +78165,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1473790101
 MonoBehaviour:
@@ -77979,6 +78179,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1474124080 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 141420, guid: 333577a36a234a240a72533a590dcb4e, type: 2}
@@ -77996,6 +78198,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1474124085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78008,7 +78212,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &1474190790
 GameObject:
@@ -78210,6 +78413,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1484312038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78222,7 +78427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &1484565782 stripped
 GameObject:
@@ -78240,7 +78444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1484565784
 MonoBehaviour:
@@ -78255,6 +78458,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1488354118
 Prefab:
   m_ObjectHideFlags: 0
@@ -78961,7 +79166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1505084253
 MonoBehaviour:
@@ -78976,6 +79180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1505641844
 GameObject:
   m_ObjectHideFlags: 0
@@ -79061,7 +79267,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1505641849
 MonoBehaviour:
@@ -79076,6 +79281,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1505711788 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 190478, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -79092,7 +79299,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1505711790
 MonoBehaviour:
@@ -79107,6 +79313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1505933894
 GameObject:
   m_ObjectHideFlags: 0
@@ -79164,7 +79372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1505933898
 MeshRenderer:
@@ -79307,6 +79514,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1506134473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79319,7 +79528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1506674989
 Prefab:
@@ -79564,7 +79772,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1509591524
 BoxCollider:
@@ -79632,7 +79839,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1509591528
 MonoBehaviour:
@@ -79647,6 +79853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1510511205
 Prefab:
   m_ObjectHideFlags: 0
@@ -80461,7 +80669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1530635583
 MeshRenderer:
@@ -80785,7 +80992,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1532729055
 MonoBehaviour:
@@ -80800,6 +81006,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1533176687
 GameObject:
   m_ObjectHideFlags: 0
@@ -81071,6 +81279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1535893280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81083,7 +81293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1536080723
 Prefab:
@@ -81776,7 +81985,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1547367204
 BoxCollider:
@@ -81845,6 +82053,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1547367208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81857,7 +82067,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &1547964671
 GameObject:
@@ -82886,7 +83095,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1557733238
 BoxCollider:
@@ -83716,7 +83924,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &1573583750
 GameObject:
@@ -83817,7 +84024,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1573583756
 MonoBehaviour:
@@ -83832,6 +84038,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1574048459
 GameObject:
   m_ObjectHideFlags: 0
@@ -83932,6 +84140,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1574048465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83944,7 +84154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1575892626
 Prefab:
@@ -84372,6 +84581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1583640137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84384,7 +84595,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1584367634
 Prefab:
@@ -84547,7 +84757,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1586086812
 MonoBehaviour:
@@ -84562,6 +84771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1586961564
 Prefab:
   m_ObjectHideFlags: 0
@@ -85217,7 +85428,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1612073306
 MeshRenderer:
@@ -85473,7 +85683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1613282805
 MonoBehaviour:
@@ -85488,6 +85697,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1617060958
 Prefab:
   m_ObjectHideFlags: 0
@@ -86080,6 +86291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1629735723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86092,7 +86305,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1629764672
 Prefab:
@@ -86740,6 +86952,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1645832705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86752,7 +86966,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1646180164
 Prefab:
@@ -86931,7 +87144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1647766044
 MeshRenderer:
@@ -86990,7 +87202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1649608481
 MonoBehaviour:
@@ -87005,6 +87216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1651237349
 Prefab:
   m_ObjectHideFlags: 0
@@ -87129,7 +87342,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1652284050
 MeshRenderer:
@@ -87185,6 +87397,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1652783635
 Prefab:
   m_ObjectHideFlags: 0
@@ -87665,6 +87879,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1661394384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87677,7 +87893,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1661462323
 Prefab:
@@ -87757,7 +87972,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1661569883
 MonoBehaviour:
@@ -87772,6 +87986,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1661986668
 Prefab:
   m_ObjectHideFlags: 0
@@ -89049,7 +89265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1674729268
 MonoBehaviour:
@@ -89064,6 +89279,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1676032441
 GameObject:
   m_ObjectHideFlags: 0
@@ -89121,7 +89338,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1676032445
 MeshRenderer:
@@ -89630,7 +89846,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1690540309
 MonoBehaviour:
@@ -89645,6 +89860,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1703801915
 Prefab:
   m_ObjectHideFlags: 0
@@ -89719,7 +89936,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1704478137
 MonoBehaviour:
@@ -89734,6 +89950,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1704975862
 GameObject:
   m_ObjectHideFlags: 0
@@ -89761,7 +89979,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1704975862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59000075, y: -0.23100288, z: 0.8610041}
+  m_LocalPosition: {x: -0.59, y: -0.23100288, z: 0.8610041}
   m_LocalScale: {x: 1.2007767, y: 1.2007769, z: 1.2007769}
   m_Children: []
   m_Father: {fileID: 976145566}
@@ -89834,6 +90052,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1704975868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89846,7 +90066,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1705704409
 Prefab:
@@ -90226,7 +90445,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1711801349
 MeshRenderer:
@@ -90469,7 +90687,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1715409868
 MonoBehaviour:
@@ -90484,6 +90701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1715711877
 Prefab:
   m_ObjectHideFlags: 0
@@ -91075,7 +91294,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1732614465
 MonoBehaviour:
@@ -91090,6 +91308,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1732812559
 Prefab:
   m_ObjectHideFlags: 0
@@ -91330,7 +91550,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1736338251
 MeshRenderer:
@@ -91386,6 +91605,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1736651106
 GameObject:
   m_ObjectHideFlags: 0
@@ -91485,7 +91706,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1736651112
 MonoBehaviour:
@@ -91500,6 +91720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1737276018
 GameObject:
   m_ObjectHideFlags: 0
@@ -91559,6 +91781,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1737276022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91571,7 +91795,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1737276023
 MeshRenderer:
@@ -92200,7 +92423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1752095317
 MonoBehaviour:
@@ -92215,6 +92437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1753342333
 Prefab:
   m_ObjectHideFlags: 0
@@ -92416,6 +92640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1756773450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92428,7 +92654,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1756773451
 MeshRenderer:
@@ -92806,6 +93031,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1764788025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92818,7 +93045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1766177085
 Prefab:
@@ -92984,7 +93210,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1774117431
 MonoBehaviour:
@@ -92999,6 +93224,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1774121383
 Prefab:
   m_ObjectHideFlags: 0
@@ -93065,7 +93292,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1775654062
 MonoBehaviour:
@@ -93080,6 +93306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1776075379
 Prefab:
   m_ObjectHideFlags: 0
@@ -93282,7 +93510,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1776668503
 MeshRenderer:
@@ -93338,6 +93565,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1778801605 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 190478, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -93354,7 +93583,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1778801607
 MonoBehaviour:
@@ -93369,6 +93597,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1782706118
 Prefab:
   m_ObjectHideFlags: 0
@@ -94164,7 +94394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1803103560
 MeshRenderer:
@@ -94363,7 +94592,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1804829830
 MonoBehaviour:
@@ -94378,6 +94606,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1807982369
 Prefab:
   m_ObjectHideFlags: 0
@@ -94740,7 +94970,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1811234259
 MonoBehaviour:
@@ -94755,6 +94984,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1812086340
 GameObject:
   m_ObjectHideFlags: 0
@@ -94950,7 +95181,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1816497439
 MeshRenderer:
@@ -95137,7 +95367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1822472090
 MonoBehaviour:
@@ -95152,6 +95381,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1822521981
 Prefab:
   m_ObjectHideFlags: 0
@@ -95314,6 +95545,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1824527142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95326,7 +95559,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1829264230
 Prefab:
@@ -95453,6 +95685,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1831742636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95465,7 +95699,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1831742637
 BoxCollider:
@@ -96412,7 +96645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1841785516
 MonoBehaviour:
@@ -96427,6 +96659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1844993856
 Prefab:
   m_ObjectHideFlags: 0
@@ -96530,6 +96764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1845557705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96542,7 +96778,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1845759019
 Prefab:
@@ -96618,7 +96853,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1845759025
 MonoBehaviour:
@@ -96632,7 +96866,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1845759026
 MonoBehaviour:
@@ -96646,7 +96879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1845817524
 Prefab:
@@ -96907,7 +97139,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1850472174
 MonoBehaviour:
@@ -96922,6 +97153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1850889415
 Prefab:
   m_ObjectHideFlags: 0
@@ -97305,6 +97538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1872956783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97317,7 +97552,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1873521890
 Prefab:
@@ -97514,6 +97748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1878421654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97526,7 +97762,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1881285147
 Prefab:
@@ -97754,7 +97989,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1883279317
 MonoBehaviour:
@@ -97769,6 +98003,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1883407126
 Prefab:
   m_ObjectHideFlags: 0
@@ -98934,7 +99170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1904365445
 BoxCollider:
@@ -99003,6 +99238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1904588774
 Prefab:
   m_ObjectHideFlags: 0
@@ -99073,7 +99310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1905166908
 MonoBehaviour:
@@ -99088,6 +99324,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1906376581
 GameObject:
   m_ObjectHideFlags: 0
@@ -99174,7 +99412,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1906376587
 MeshRenderer:
@@ -99230,6 +99467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1908099984
 Prefab:
   m_ObjectHideFlags: 0
@@ -99582,6 +99821,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1913850390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99594,7 +99835,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &1916415227
 Prefab:
@@ -99807,7 +100047,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1919171501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c49e19e5e18d7d4c819967f2bb3fb06, type: 3}
+  m_Script: {fileID: 11500000, guid: 87b85bd0afaff304496a749eab6f9944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waitingTime: 0.3
@@ -100179,7 +100419,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1924232857
 MonoBehaviour:
@@ -100194,6 +100433,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1925269949 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 171066, guid: b61d327277ff96d4f8730bf06b7a5bce, type: 2}
@@ -100210,7 +100451,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1925269955
 MonoBehaviour:
@@ -100225,6 +100465,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1926965263
 Prefab:
   m_ObjectHideFlags: 0
@@ -100337,7 +100579,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1929266746
 MeshRenderer:
@@ -100393,6 +100634,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1929300112
 GameObject:
   m_ObjectHideFlags: 0
@@ -100479,7 +100722,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1929300118
 MeshRenderer:
@@ -100535,6 +100777,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1930478239
 Prefab:
   m_ObjectHideFlags: 0
@@ -100784,6 +101028,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &1936527567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100796,7 +101042,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &1936527568
 BoxCollider:
@@ -101212,7 +101457,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1943949230
 MonoBehaviour:
@@ -101227,6 +101471,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1946605081
 GameObject:
   m_ObjectHideFlags: 0
@@ -101326,7 +101572,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1946605087
 MonoBehaviour:
@@ -101341,6 +101586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1947639634 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 116256, guid: 6f9632de9674c8f49b596fc8bbbf3ef0, type: 2}
@@ -101357,7 +101604,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1947639636
 MonoBehaviour:
@@ -101372,6 +101618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &1948857963 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 163426, guid: 5d2f1152f8d31c2468828726d1589686, type: 2}
@@ -101388,7 +101636,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1948857965
 MonoBehaviour:
@@ -101403,6 +101650,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1949744544
 Prefab:
   m_ObjectHideFlags: 0
@@ -101527,7 +101776,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1952890112
 MonoBehaviour:
@@ -101542,6 +101790,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1954796353
 Prefab:
   m_ObjectHideFlags: 0
@@ -102186,7 +102436,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &1971996918
 MeshRenderer:
@@ -102242,6 +102491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1972766593
 Prefab:
   m_ObjectHideFlags: 0
@@ -102906,7 +103157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1982577672
 MonoBehaviour:
@@ -102921,6 +103171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1982809512
 Prefab:
   m_ObjectHideFlags: 0
@@ -103148,7 +103400,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &1986980576
 MonoBehaviour:
@@ -103163,6 +103414,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &1991805332
 Prefab:
   m_ObjectHideFlags: 0
@@ -105997,7 +106250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2035043389
 MonoBehaviour:
@@ -106012,6 +106264,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &2037654039
 GameObject:
   m_ObjectHideFlags: 0
@@ -106415,6 +106669,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.1
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2041965473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106427,7 +106683,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &2043396651
 Prefab:
@@ -106615,7 +106870,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &2049225192
 Prefab:
@@ -107387,7 +107641,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2063339790
 MonoBehaviour:
@@ -107402,6 +107655,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2063668763
 Prefab:
   m_ObjectHideFlags: 0
@@ -107694,6 +107949,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2073756893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107706,7 +107963,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &2073756894
 BoxCollider:
@@ -108112,7 +108368,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2080938206
 MonoBehaviour:
@@ -108127,6 +108382,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2082629349
 Prefab:
   m_ObjectHideFlags: 0
@@ -108621,7 +108878,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &2091210164
 MeshRenderer:
@@ -108677,6 +108933,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2095833269
 Prefab:
   m_ObjectHideFlags: 0
@@ -109132,7 +109390,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2100109882
 MonoBehaviour:
@@ -109147,6 +109404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!4 &2100431473 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411682, guid: 333577a36a234a240a72533a590dcb4e, type: 2}
@@ -109168,6 +109427,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2102634673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109180,7 +109441,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &2105340987
 GameObject:
@@ -109366,7 +109626,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2106347784
 MonoBehaviour:
@@ -109381,6 +109640,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2108721668
 Prefab:
   m_ObjectHideFlags: 0
@@ -109784,6 +110045,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2122819815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109796,7 +110059,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1 &2123796924
 GameObject:
@@ -110024,6 +110286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   showTextBoxObject: {fileID: 0}
   defaultTime: 0
+  texts: []
 --- !u!4 &2126893464
 Transform:
   m_ObjectHideFlags: 0
@@ -110317,6 +110580,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2131223768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110329,7 +110594,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!1001 &2133892359
 Prefab:
@@ -110433,7 +110697,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2135216693
 MonoBehaviour:
@@ -110448,6 +110711,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2135399322
 Prefab:
   m_ObjectHideFlags: 0
@@ -110526,7 +110791,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2135603279
 MonoBehaviour:
@@ -110541,6 +110805,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2136006507
 Prefab:
   m_ObjectHideFlags: 0
@@ -110831,7 +111097,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!23 &2138580049
 MeshRenderer:
@@ -110887,6 +111152,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1001 &2138626429
 Prefab:
   m_ObjectHideFlags: 0
@@ -111058,6 +111325,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!114 &2140429613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111070,7 +111339,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!65 &2140429614
 BoxCollider:
@@ -111288,7 +111556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Outline: {fileID: 2100000, guid: d92c21e7a2937f54387dd359933bfc7f, type: 2}
-  MyGameObject: {fileID: 0}
   waitingTime: 2
 --- !u!114 &2146794580
 MonoBehaviour:
@@ -111303,6 +111570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 1.5
   body: {fileID: 0}
+  waitingTime: 0.3
+  SoundWaveManager: {fileID: 0}
 --- !u!1 &2146944447
 GameObject:
   m_ObjectHideFlags: 0
