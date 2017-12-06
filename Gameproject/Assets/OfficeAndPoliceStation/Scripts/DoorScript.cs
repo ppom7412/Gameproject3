@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DoorScript : MonoBehaviour {
 
@@ -9,8 +10,9 @@ public class DoorScript : MonoBehaviour {
 	public float doorOpenAngle = 90f;
 	public float doorCloseAngle = 0f;
 	public float smooth = 2f;
+ 
 
-	void Start () 
+    void Start () 
 	{
         //layer에 Door추가 해야함
         gameObject.layer = LayerMask.NameToLayer("Door");
@@ -28,8 +30,11 @@ public class DoorScript : MonoBehaviour {
     public void ChangeDoorStateWithAnyKey()
 	{
         if (!unlock) return;
+        
 
         open = !open;
+        GetComponent<DoorSound>().FlagChangePlayer();
+        GetComponent<DoorSound>().ActiveSoundWave();
         GetComponent<AudioSource>().Play();
         Debug.Log("문을 연다.");
 	}
@@ -38,6 +43,8 @@ public class DoorScript : MonoBehaviour {
     public void ChangeDoorStateWithMasterKey()
     {
         open = !open;
+        GetComponent<DoorSound>().FlagChangeMurderer();
+        GetComponent<DoorSound>().ActiveSoundWave();
         GetComponent<AudioSource>().Play();
         Debug.Log("문을 연다.");
     }

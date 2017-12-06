@@ -6,7 +6,7 @@ public class OutlineShader : MonoBehaviour
 {
     [SerializeField]
     private Material Outline;
-    [SerializeField]
+
     private GameObject MyGameObject;
     private Material MyMaterial;
 
