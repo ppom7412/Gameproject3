@@ -52,6 +52,8 @@ public class SoundManager : MonoBehaviour {
         obj.name = "bgm_main";
         obj.transform.position = transform.position;
         obj.transform.SetParent(transform);
+
+        bgmPlayObject = obj;
     }
 
     public void PlayEffectSfx(AudioClip _sfx, Vector3 _pos, float _maxDist = 30, float _minDist = 10)
@@ -135,28 +137,28 @@ public class SoundManager : MonoBehaviour {
     }
 
     // 사운드 설정의 Get, Set
-    //public void SetEffectVolume(float _volume)
-    //{
-    //    if (_volume < 0 || _volume > 1) return;
+    public void SetEffectVolume(float _volume)
+    {
+        if (_volume < 0 || _volume > 1) return;
 
-    //    effectVolume = _volume;
-    //}
+        effectVolume = _volume;
+    }
 
-    //public void SetBGMVolume(float _volume)
-    //{
-    //    if (_volume < 0 || _volume > 1) return;
+    public void SetBGMVolume(float _volume)
+    {
+        if (_volume < 0 || _volume > 1) return;
 
-    //    bgmVolume = _volume;
-    //}
+        bgmVolume = _volume;
+    }
 
-    //public void SetEffectMute(bool _mute)
-    //{
-    //    isEffectMute = _mute;
-    //}
+    public void SetEffectMute(bool _mute)
+    {
+        isEffectMute = _mute;
+    }
 
-    //public void SetBGMMute(bool _mute)
-    //{
-    //    isBgmMute = _mute;
-    //}
+    public void SetBGMMute(bool _mute)
+    {
+        isBgmMute = _mute;
+    }
 
 }

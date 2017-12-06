@@ -17,13 +17,9 @@ public class LightController : MonoBehaviour {
         }
 	}
 
-    public void ChangeToLightIntensity(float _value)
+    public void Update()
     {
-        if (minIntensity > _value)
-            directionalLight.intensity = minIntensity;
-        else if (maxIntensity < _value)
-            directionalLight.intensity = maxIntensity;
 
-        directionalLight.intensity = _value;
     }
+
 }
