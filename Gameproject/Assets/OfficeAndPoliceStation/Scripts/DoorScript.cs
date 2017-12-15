@@ -24,7 +24,7 @@ public class DoorScript : MonoBehaviour {
 
     public void DoorUnlock()
     {
-        unlock = false;
+        unlock = true;
     }
 
     public void ChangeDoorStateWithAnyKey()

@@ -15,12 +15,12 @@ public class GettingKeyFromObject : MonoBehaviour {
     private int[] getKeyPoints;
     private const int maxKeyCount = 20;
 
-    private int layerMask;
+    private int doorLayerMask;
 
 
     void Start () {
         getKeyPoints = new int[maxKeyCount];
-        layerMask = 1 << LayerMask.NameToLayer("Door");
+        doorLayerMask = 1 << LayerMask.NameToLayer("Door");
 
         if (thisType == GettingType.MasterKey)
             SetMasterKey();
@@ -64,13 +64,20 @@ public class GettingKeyFromObject : MonoBehaviour {
     {
         if (Input.GetKeyDown(keycode))
         {
+            Debug.Log("Push! Key");
             RaycastHit hitInfo;
-            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hitInfo, distance, layerMask))
+            if (Physics.Raycast(transform.position, transform.forward, out hitInfo, distance, doorLayerMask))
+            //if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hitInfo, distance, doorLayerMask))
             {
+                Debug.Log("TryToOpenTheDoor");
                 DoorScript door = hitInfo.collider.gameObject.GetComponentInParent<DoorScript>();
+                if (door == null) hitInfo.collider.gameObject.GetComponent<DoorScript>();
                 if (door == null)
+                {
                     ErrorAdmin.ErrorMessegeFromObject("Object is not Door, But Object have Layer is Door", "TryToOpenTheDoor()", hitInfo.collider.gameObject);
-
+                    return;
+                }
+                Debug.Log("This is Door!");
                 UseTheKeys(door);
                 ActiveDoor(door);
             }
@@ -81,8 +88,10 @@ public class GettingKeyFromObject : MonoBehaviour {
     {
         for (int i = 0; i < maxKeyCount; i++)
         {
-            if (getKeyPoints[i] < 0)
+            if (getKeyPoints[i] < 0 && getKeyPoints[i] != _point){
                 getKeyPoints[i] = _point;
+                break;
+            }
         }
     }
 
@@ -102,6 +111,7 @@ public class GettingKeyFromObject : MonoBehaviour {
     }
 
     public void UseTheKeys(DoorScript _door){
+        Debug.Log("UseTheKeys");
 
         int keyValue = SearchKeypoint(_door.doorNum);
 
@@ -118,5 +128,7 @@ public class GettingKeyFromObject : MonoBehaviour {
         //키를 가지고 있음. 언락
         _door.DoorUnlock();
         getKeyPoints[keyValue] = -1;
+
+        ChatWindow.StartTextInChatWondow(0);
     }
 }

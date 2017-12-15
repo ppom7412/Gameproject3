@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AutoDoor : MonoBehaviour {
-
+   //rigidbody 꼭 확인
     public DoorScript mydoor;
-
 
     void OpenTheDoor()
     {
@@ -25,6 +24,7 @@ public class AutoDoor : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("틱");
         DoorScript door = other.GetComponent<DoorScript>();
         if (door == null) return;
 
@@ -37,6 +37,7 @@ public class AutoDoor : MonoBehaviour {
 
     private void OnTriggerExit(Collider other)
     {
+        Debug.Log("톡");
         DoorScript door = other.GetComponent<DoorScript>();
         if (door == null) return;
 

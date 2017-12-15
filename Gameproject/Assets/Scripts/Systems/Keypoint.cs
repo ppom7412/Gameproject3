@@ -17,6 +17,7 @@ public class Keypoint : MonoBehaviour {
             }
 
             keys.AddKeyPoint(key);
+            Destroy(gameObject);
         }
     }
 }

@@ -79,6 +79,8 @@ public class ChatWindow : MonoBehaviour {
 
     public static void StartTextInChatWondow(int _chatContain, float _limitTime = -1)
     {
+        if (_chatContain > instance.texts.Length) return;
+
         instance.SetUpChatWindow(_limitTime, instance.texts[_chatContain]);
     }
 }
