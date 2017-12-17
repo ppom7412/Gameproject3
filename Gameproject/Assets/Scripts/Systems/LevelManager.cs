@@ -34,6 +34,10 @@ public class LevelManager : MonoBehaviour {
 
     void Awake()
     {
+       
+    }
+
+    void Start () {
         if (!instance)
         {
             instance = (LevelManager)GameObject.FindObjectOfType(typeof(LevelManager));
@@ -44,9 +48,6 @@ public class LevelManager : MonoBehaviour {
                 instance = (LevelManager)instanceObject.AddComponent(typeof(LevelManager));
             }
         }
-    }
-
-    void Start () {
         currlevel = 0;
         isLoad = false;
         player = GameObject.FindGameObjectWithTag("Player");

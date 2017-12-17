@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour {
+public class GamePauseMenu : MonoBehaviour {
     //public AnimationClip pauseClip;
     //public AnimationClip unpauseClip;
 
