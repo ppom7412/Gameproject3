@@ -29,6 +29,7 @@ public class MovedObject : MonoBehaviour {
 
     private void Start()
     {
+
         gameObject.layer = LayerMask.NameToLayer("MoveObject");
         body = gameObject.GetComponent<Rigidbody>();
 
@@ -49,7 +50,7 @@ public class MovedObject : MonoBehaviour {
         data.subRadius = 0.6f;
         data.circlePoint = transform.position;
 
-       // SoundWaveManager = GameObject.Find("SoundWaveManager");
+        SoundWaveManager = GameObject.Find("SoundWaveManager");
     }
 
     private void Update()

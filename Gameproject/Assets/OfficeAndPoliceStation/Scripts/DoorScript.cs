@@ -10,7 +10,7 @@ public class DoorScript : MonoBehaviour {
 	public float doorOpenAngle = 90f;
 	public float doorCloseAngle = 0f;
 	public float smooth = 2f;
- 
+
 
     void Start () 
 	{
@@ -33,8 +33,9 @@ public class DoorScript : MonoBehaviour {
         
 
         open = !open;
-        GetComponent<DoorSound>().FlagChangePlayer();
-        GetComponent<DoorSound>().ActiveSoundWave();
+        SoundManager.Instance.PlayEffectSfx(SoundManager.Instance.effectSounds[0], transform.position);
+        SoundManager.Instance.FlagChangePlayer();
+        SoundManager.Instance.ActiveSoundWave();
         GetComponent<AudioSource>().Play();
         Debug.Log("문을 연다.");
 	}
@@ -43,9 +44,9 @@ public class DoorScript : MonoBehaviour {
     public void ChangeDoorStateWithMasterKey()
     {
         open = !open;
-        GetComponent<DoorSound>().FlagChangeMurderer();
-        GetComponent<DoorSound>().ActiveSoundWave();
-        GetComponent<AudioSource>().Play();
+        SoundManager.Instance.PlayEffectSfx(SoundManager.Instance.effectSounds[0], transform.position);
+        SoundManager.Instance.FlagChangeMurderer();
+        SoundManager.Instance.ActiveSoundWave();
         Debug.Log("문을 연다.");
     }
 
